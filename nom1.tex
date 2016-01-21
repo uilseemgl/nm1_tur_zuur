@@ -1,0 +1,28 @@
+\documentclass[10pt,a4paper,oneside]{book}
+\usepackage{custom}
+\begin{document}
+\title{Эхний ном}
+\author{Зохиогчийн нэр}
+\date{2016 он}
+\maketitle
+\chapter{Оршил бодлогууд}
+
+\Problem Бодит $x$ тооны хувьд $\sec x - \tg x = 2$ бол $\sec x + \tg x$-г ол.
+
+\Solution
+$(\sec x + \tg x)(\sec x - \tg x)$ үржвэрийг авч үзье.
+\begin{equation*}
+\begin{split}
+(\sec x + \tg x)(\sec x - \tg x)= \sec^2 x - \tg^2 x =\\
+= \frac{1}{\cos^2 x} - \frac{\sin^2 x}{\cos^2 x}
+= \frac{1-\sin^2 x}{\cos^2 x} = \frac{\cos^2 x}{\cos^2 x} = 1
+\end{split}
+\end{equation*}
+Өөрөөр хэлбэл $\forall x \in D(f)$ хувьд $\sec^2 x - \tg^2 x = 1$ болно. Иймд 
+\begin{equation*}
+\sec x + \tg x = \frac{1}{\sec x - \tg x} = \frac{1}{2}
+\end{equation*}
+ болно.
+
+
+\end{document}

@@ -1,0 +1,21 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{custom}[2016/01/21 Nomnii package first-time]
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[mongolian]{babel}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+
+\newcounter{problem}
+
+\newcommand\Problem{%
+	\stepcounter{problem}%
+	\textbf{\theproblem.}~%
+}
+
+\newcommand{\Solution}{%
+	\textit{\textbf{Бодолт:}}~%
+}
+
+\parindent 0in
+\parskip 1em
