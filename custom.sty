@@ -5,16 +5,28 @@
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
+\RequirePackage{enumerate}
 
 \newcounter{problem}
+\newcounter{solution}
 
 \newcommand\Problem{%
 	\stepcounter{problem}%
 	\textbf{\theproblem.}~%
+	\setcounter{solution}{0}%
 }
 
-\newcommand{\Solution}{%
+\newcommand{\TheSolution}{%
 	\textit{\textbf{Бодолт:}}~%
+}
+
+\newcommand{\ASolution}{%
+	\stepcounter{solution}%
+	\textit{\textbf{Бодолт \thesolution:}}\\%
+}
+
+\newcommand{\Note}{%
+	\textit{\textbf{Тэмдэглэл:}}~%
 }
 
 \parindent 0in

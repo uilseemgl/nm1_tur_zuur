@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.18)  22 JAN 2016 01:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.18)  31 JAN 2016 17:52
 entering extended mode
 **./nom1.tex
 (nom1.tex
@@ -542,34 +542,40 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks21
+)
 \c@problem=\count101
+\c@solution=\count102
 ) (nom1.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cyrillic\t2acmr.fd"
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `nom1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -580,30 +586,106 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {\Mongolian \CYRB \cyry \cyrl \cyrerev \cyrg } 1.
 [1
 
-] (nom1.aux) ) 
+]
+Overfull \hbox (26.50497pt too wide) in paragraph at lines 88--88
+[] 
+ []
+
+
+Overfull \hbox (17.77466pt too wide) detected at line 88
+[]
+ []
+
+
+Overfull \hbox (32.102pt too wide) detected at line 92
+[] \OT1/cmr/m/n/10 36[] \OMS/cmsy/m/n/10   [] \OT1/cmr/m/n/10 72[] = [] = []
+ []
+
+
+Overfull \hbox (18.15175pt too wide) detected at line 96
+[] \OT1/cmr/m/n/10 = [] = [] = []
+ []
+
+
+Overfull \hbox (67.88803pt too wide) in paragraph at lines 123--123
+[] 
+ []
+
+[2]
+Overfull \hbox (85.87712pt too wide) in paragraph at lines 141--141
+[] 
+ []
+
+[3]
+Overfull \hbox (62.88817pt too wide) in paragraph at lines 250--250
+[] 
+ []
+
+[4] [5] [6]
+Overfull \hbox (4.64178pt too wide) in paragraph at lines 395--397
+[]\T2A/cmr/bx/n/10 18. $\OMS/cmsy/m/n/10 4\OML/cmm/m/it/10 ABC$ \T2A/cmr/m/n/10
+ - Ì˚ ıÛ‚¸‰ $[] \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 B \OT1
+/cmr/m/n/10 + [] \OML/cmm/m/it/10 C \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1$ \T2A/
+cmr/m/n/10 ·ÓÎ $\OML/cmm/m/it/10 min [] <$
+ []
+
+[7]
+Overfull \hbox (62.14334pt too wide) in paragraph at lines 468--468
+[] 
+ []
+
+[8] [9] [10]
+Overfull \hbox (0.89471pt too wide) in paragraph at lines 602--604
+\T2A/cmr/bx/it/10 “˝Ï‰˝„Î˝Î: \T2A/cmr/m/n/10 (a) -„ ∞∞ ‡-„‡‡ ·‡-Ú‡Î˙ˇ. ¡Ó‰-Î
+Ó-„˚Ì Ì∞ıˆ-Î∞∞ $[] []\OML/cmm/m/it/10 ; [] []; [] []$
+ []
+
+[11] [12] [13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 864--865
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
+
+ []
+
+
+Overfull \hbox (1.4439pt too wide) in paragraph at lines 885--885
+[] 
+ []
+
+[16] [17] (nom1.aux) ) 
 Here is how much of TeX's memory you used:
- 2444 strings out of 493634
- 26406 string characters out of 3141320
- 84434 words of memory out of 3000000
- 5815 multiletter control sequences out of 15000+200000
- 17417 words of font info for 49 fonts, out of 3000000 for 9000
+ 2481 strings out of 493634
+ 26910 string characters out of 3141320
+ 96434 words of memory out of 3000000
+ 5845 multiletter control sequences out of 15000+200000
+ 20235 words of font info for 53 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 34i,16n,26p,280b,190s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a
-\dpi600\labi1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\
-lh-t2a\dpi600\larm1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\lh\lh-t2a\dpi600\labx1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\lh\lh-t2a\dpi600\labx2488.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\lh\lh-t2a\dpi600\labx2074.pk> <C:\Users\nmd\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\unknown\unknown\dpi600\larm1200.pk> <C:\Users\nmd\AppData\
-Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1728.pk><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on nom1.pdf (2 pages, 69807 bytes).
+ 34i,17n,26p,700b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\l
+h\lh-t2a\dpi600\lasl1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\lh\lh-t2a\dpi600\labi1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1000.pk> <C:\Users\nmd\AppData\Local\MiKT
+eX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk> <C:\Users\nmd\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2074.pk> <C:\Users\nmd\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi600\larm1200.pk> <C:\User
+s\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1728.pk><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on nom1.pdf (18 pages, 211578 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 293 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

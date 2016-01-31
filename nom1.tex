@@ -1,5 +1,21 @@
 \documentclass[10pt,a4paper,oneside]{book}
 \usepackage{custom}
+
+\makeatletter
+\newenvironment{sqcases}{%
+  \matrix@check\sqcases\env@sqcases
+}{%
+  \endarray\right.%
+}
+\def\env@sqcases{%
+  \let\@ifnextchar\new@ifnextchar
+  \left\lbrack
+  \def\arraystretch{1.2}%
+  \array{@{}l@{\quad}l@{}}%
+}
+\makeatother
+
+
 \begin{document}
 \title{Эхний ном}
 \author{Зохиогчийн нэр}
@@ -9,7 +25,7 @@
 
 \Problem Бодит $x$ тооны хувьд $\sec x - \tg x = 2$ бол $\sec x + \tg x$-г ол.
 
-\Solution
+\TheSolution
 $(\sec x + \tg x)(\sec x - \tg x)$ үржвэрийг авч үзье.
 \begin{equation*}
 \begin{split}
@@ -23,6 +39,861 @@ $(\sec x + \tg x)(\sec x - \tg x)$ үржвэрийг авч үзье.
 \sec x + \tg x = \frac{1}{\sec x - \tg x} = \frac{1}{2}
 \end{equation*}
  болно.
+ 
+\Problem $0^{\circ}<\theta< 45^{\circ}$ бол
+\begin{equation*}
+\begin{split}
+t_1 = (\tg\theta)^{\tg\theta},\hspace{1cm} t_2 = (\tg\theta)^{\ctg\theta},\\
+t_3 = (\ctg\theta)^{\tg\theta},\hspace{1cm} t_4 = (\ctg\theta)^{\ctg\theta}
+\end{split}
+\end{equation*}
+тоонуудыг буурах эрэмбээр эрэмбэл.
 
+\TheSolution
+$\forall a > 1$ тооны хувьд $y=a^x$  функц өсөх функц ба $0 < a < 1$ үед уг функц буурах функц юм. $0^{\circ} < \theta < 45^{\circ}$ завсарт $\ctg\theta > 1 > \tg\theta > 0$ учир  $t_4 > t_3$, $t_1 > t_2$ ба $t_3 > 1 > t_1$ болно. Өөрөөр хэлбэл $t_4 > t_3 > t_1 > t_2$ болно.
+
+\Problem Тооцоол.
+\begin{enumerate}[(a)]
+\item $\sin\frac{\pi}{12}, \cos\frac{\pi}{12}, \tg\frac{\pi}{12}$
+\item $\cos^4\frac{\pi}{24}-\sin^4\frac{\pi}{24}$
+\item $\cos 36^\circ - \cos 72^\circ$
+\item $\sin 10^\circ \sin 50^\circ\sin 70^\circ$
+\end{enumerate}
+
+\TheSolution
+\begin{enumerate}[(a)]
+\item Давхар өнцөг болон нийлбэр ялгаварын томъёог ашиглавал
+\begin{equation*}
+\begin{split}
+\sin\frac{\pi}{12} = \sin\left(\frac{\pi}{3}-\frac{\pi}{4}\right)=\sin\frac{\pi}{3}\cos\frac{\pi}{4}-\sin\frac{\pi}{4}\cos\frac{\pi}{3}=\\
+=\frac{\sqrt{3}}{2}\cdot\frac{\sqrt{2}}{2}-\frac{1}{2}\cdot\frac{\sqrt{2}}{2}=\frac{\sqrt{6}-\sqrt{2}}{4}
+\end{split}
+\end{equation*}
+\begin{equation*}
+\begin{split}
+\cos\frac{\pi}{12} = \cos\left(\frac{\pi}{3}-\frac{\pi}{4}\right) = \cos\frac{\pi}{3}\cos\frac{\pi}{4}+\sin\frac{\pi}{3}\sin\frac{\pi}{4}=\\
+=\frac{1}{2}\cdot\frac{\sqrt{2}}{2}+\frac{\sqrt{3}}{2}\cdot\frac{\sqrt{2}}{2}=\frac{\sqrt{2}+\sqrt{6}}{4}
+\end{split}
+\end{equation*}
+\begin{equation*}
+\begin{split}
+\tg\frac{\pi}{12}=\frac{\sin\frac{\pi}{12}}{\cos\frac{\pi}{12}}=\frac{\frac{\sqrt{6}-\sqrt{2}}{4}}{\frac{\sqrt{6}+\sqrt{2}}{4}}=\frac{\sqrt{6}-\sqrt{2}}{\sqrt{6}+\sqrt{2}}=2-\sqrt{3}
+\end{split}
+\end{equation*}
+\item
+\begin{equation*}
+\begin{split}
+\cos^4\frac{\pi}{24}-\sin^4\frac{\pi}{24}=\left(\cos^2\frac{\pi}{24}+\sin^2\frac{\pi}{24}\right)\left(\cos^2\frac{\pi}{24}-\sin^2\frac{\pi}{24}\right) = 1\cdot\cos\frac{\pi}{12} = \frac{\sqrt{2}+\sqrt{6}}{4}
+\end{split}
+\end{equation*}
+\item
+\begin{equation*}
+\cos 36^\circ - \cos 72^\circ = \frac{2\left(\cos 36^\circ - \cos 72^\circ\right)\left(\cos 36^\circ + \cos 72^\circ\right)}{2\left(\cos 36^\circ + \cos 72^\circ\right)}=\frac{2\cos^2 36^\circ - 2\cos^2 72^\circ}{2\left(\cos 36^\circ + \cos 72^\circ\right)}
+\end{equation*}
+Давхар өнцгийн томьёо ашиглавал
+\begin{equation*}
+\frac{2\cos^2 36^\circ - 2\cos^2 72^\circ}{2\left(\cos 36^\circ + \cos 72^\circ\right)} = \frac{\cos 72^\circ + 1 - \cos 144^\circ -1}{2\left(\cos 36^\circ + \cos 72^\circ\right)} = \frac{\cos 72^\circ + \cos 36^\circ}{2\left(\cos 36^\circ + \cos 72^\circ\right)} = \frac{1}{2}
+\end{equation*}
+Дээрх тэнцэтгэлийг геометрийн аргаар баталж болно. Үүний тулд оройн өнцөг $\measuredangle A = 36^\circ$ ба талууд нь $AB=AC$, $BC=1$ байх адил хажуут гурвалжныг авч үзье. Уг гурвалжны $\angle B$ өнцгийн биссектрис $AC$ талтай огтлолцох огтлолцлыг $D$ гэвэл $BC=BD=AD=1, AB=2\cos 36^\circ$ ба $CD=2\cos 72^\circ$ болохыг та бүхэн бие даан батлаарай. Үр дүн нь дээрх тэнцэтгэлийн геометр баталгаа юм.
+\item
+\begin{equation*}
+\begin{split}
+8\sin 20^\circ\sin 10^\circ\sin50^\circ\sin70^\circ = 8\sin 20^\circ\cos 20^\circ\cos40^\circ\cos80^\circ =\\
+= 4\sin 40^\circ\cos 40^\circ\cos 80^\circ=2\sin 80^\circ\cos 80^\circ = \sin 160^\circ = \sin 20^\circ
+\end{split}
+\end{equation*}
+Эндээс
+\begin{equation*}
+\sin 10^\circ\sin 50^\circ\sin 70^\circ = \frac{1}{8}
+\end{equation*}
+болно.
+\end{enumerate}
+
+\Problem Илэрхийллийг хялбарчил.
+\begin{equation*}
+\sqrt{\sin^4 x + 4\cos^2 x}-\sqrt{\cos^4 x + 4\sin^2 x}
+\end{equation*}
+
+\TheSolution
+\begin{equation*}
+\begin{split}
+\sqrt{\sin^4 x + 4\cos^2 x}-\sqrt{\cos^4 x + 4\sin^2 x} = \sqrt{\sin^4 x + 4\left(1-\sin^2 x\right)}-\sqrt{\cos^4 x + 4\left(1-\cos^2 x\right)}=\\
+ =\sqrt{\left(2-\sin^2 x\right)^2}-\sqrt{\left(2-\cos^2 x\right)^2} = \left(2-\sin^2 x\right) - \left(2-\cos^2 x\right) = \cos^2 x - \sin^2 x = \cos 2x
+\end{split}
+\end{equation*}
+
+\Problem Батал.
+\begin{equation*}
+1-\ctg 23^\circ = \frac{2}{1-\ctg 22^\circ}
+\end{equation*}
+
+\TheSolution
+\begin{equation*}
+\left(1-\ctg 23^\circ\right)\left(1-\ctg 22^\circ\right) = 2
+\end{equation*}
+болохыг баталья.
+\begin{equation*}
+\begin{split}
+\left(1-\ctg 23^\circ\right)\left(1-\ctg 22^\circ\right) = \left(1-\frac{\cos 23^\circ}{\sin 23^\circ}\right)\left(1-\frac{\cos 22^\circ}{\sin 22^\circ}\right)
+= \frac{\sin 23^\circ - \cos 23^\circ}{\sin 23^\circ}\cdot\frac{\sin 22^\circ - \cos 22^\circ}{\sin 22^\circ} = \\
+= \frac{\sqrt{2}\sin \left(23^\circ - 45^\circ\right)\sqrt{2}\sin \left(22^\circ - 45^\circ\right)}{\sin 23^\circ \cdot \sin 22^\circ}=\frac{2\sin \left(-22^\circ\right)\sin \left(-23^\circ\right)}{\sin 23^\circ \sin 22^\circ}=\frac{2\sin 22^\circ\sin 23^\circ}{\sin 23^\circ \sin 22^\circ} = 2
+\end{split}
+\end{equation*}
+
+\TheSolution Котангенсийн өнцгүүдийн нийлбэрийн томьёогоор
+\begin{equation*}
+\frac{\ctg 22^\circ\ctg 23^\circ-1}{\ctg 22^\circ+\ctg 23^\circ}=\ctg\left(22^\circ+23^\circ\right)=\ctg 45^\circ = 1
+\end{equation*}
+Эндээс $\ctg 22^\circ\ctg 23^\circ - 1 = \ctg 22^\circ + \ctg 23^circ$ буюу
+\begin{equation*}
+1-\ctg 22^\circ - \ctg 23^\circ + \ctg 22^\circ\ctg 23^\circ = 2
+\end{equation*}
+болно. Өөрөөр хэлбэл
+\begin{equation*}
+\left(1-\ctg 23^\circ\right)\left(1-\ctg 22^\circ\right) = 2
+\end{equation*}
+болно.
+
+\Problem 
+\begin{equation*}
+\frac{\sqrt{3}-1}{\sin x}+\frac{\sqrt{3}+1}{\cos x} = 4\sqrt{2}
+\end{equation*}
+тэгшитгэлийн $\left(0, \frac{\pi}{2}\right)$ завсар дахь бүх шийдийг ол.
+
+\TheSolution
+Бодлого $3(a)$ дээр бид $\cos \frac{\pi}{12}=\frac{\sqrt{2}+\sqrt{6}}{4}$ ба $\sin \frac{\pi}{12}=\frac{\sqrt{6}-\sqrt{2}}{4}$ болохыг харсан. Эдгээрийг тэгшитгэлд орлуулвал
+\begin{equation*}
+\frac{\frac{\sqrt{3}-1}{4}}{\sin x}+\frac{\frac{\sqrt{3}+1}{4}}{\cos x} = \sqrt{2}
+\Rightarrow
+\frac{\sin \frac{\pi}{12}}{\sin x} + \frac{\cos \frac{\pi}{12}}{\cos x} = 2
+\Rightarrow
+\end{equation*}
+\begin{equation*}
+\Rightarrow
+\sin\frac{\pi}{12}\cos x + \cos\frac{\pi}{12}\sin x = 2\sin x\cos x
+\Rightarrow
+\end{equation*}
+\[
+\Rightarrow
+\sin\left(\frac{\pi}{12}+x\right) = \sin 2x
+\Rightarrow
+\begin{sqcases}
+\frac{\pi}{12}+x = 2x\\
+\frac{\pi}{12}+x = \pi - 2x
+\end{sqcases}
+\Rightarrow
+\begin{sqcases}
+x=\frac{\pi}{12}\\
+x = \frac{11\pi}{36}
+\end{sqcases}
+\]
+
+\Problem
+
+
+\Problem
+$\vartriangle ABC$-ны хувьд $\sin \frac{A}{2}\leq\frac{a}{b+c}$ болохыг харуул.
+
+\TheSolution
+Гурвалжны хувьд синусын өргөтгөсөн теорем ёсоор
+\begin{equation*}
+\frac{a}{b+c}=\frac{\sin A}{\sin B + \sin C}
+\end{equation*}
+Синусуудын нийлбэрийн томьёо болон давхар өнцгийн томьёог ашиглавал
+\begin{equation*}
+\frac{a}{b+c} = \frac{2\sin \frac{A}{2}\cos \frac{A}{2}}{2\sin \frac{B+C}{2}\cos\frac{B-C}{2}}=\frac{\sin\frac{A}{2}}{\cos\frac{B-C}{2}}
+\end{equation*}
+Энд $0\leq |B-C|<180^\circ \Rightarrow 0<\cos\frac{B-C}{2}\leq 1$ тул
+\begin{equation*}
+\frac{\sin\frac{A}{2}}{\cos\frac{B-C}{2}}\geq\sin\frac{A}{2} \Rightarrow \frac{a}{b+c} \geq \sin\frac{A}{2}
+\end{equation*}
+болно. Үүнтэй адилаар
+\begin{equation*}
+\sin\frac{B}{2} \leq \frac{b}{c+a}\hspace{8mm} \text{ба}\hspace{8mm} \sin\frac{C}{2}\leq \frac{c}{a+b}
+\end{equation*}
+болно.
+
+\Problem
+$\left[-\frac{\pi}{4},\frac{\pi}{4}\right]$ завсрыг $I$ гэе. $\left[-1,1\right]$ завсарт тодорхойлогдсон $f\left(\sin 2x\right)=\sin x + \cos x$ чанарыг хангах $f$ функцийг ол. $I$ завсарт $f\left(\tan^2 x\right)$ функцийг хялбарчил.
+
+\TheSolution
+\begin{equation*}
+\left[f\left(\sin 2x\right)\right]^2 = \left(\sin x + \cos x\right)^2 = \sin^2 x + \cos^2 x + 2\sin x\cos x = 1+ \sin 2x
+\end{equation*}
+$x \in I$ байх үед $\sin 2x \in [-1, 1]$ байна. $\sin 2x = t$ гэвэл $t \in [-1, 1]$ ба $[f(t)]^2 = 1+t$ болно. Эндээс $f(t) = \sqrt{1+t}$ болно.
+
+$-\frac{\pi}{4}\leq x\geq\frac{\pi}{4}$ үед $-1\leq\tg x\geq1 x$ байх ба $0\geq \tg^2 x \geq 1$ тул
+\begin{equation*}
+f(\tg^2 x) = \sqrt{1+\tg^2 x}=\sqrt{1+\frac{\sin^2 x}{\cos^2 x}}=\sqrt{\frac{\cos^2 x + \sin^2 x}{\cos^2 x}} = \frac{1}{\cos x}= \sec x
+\end{equation*}
+болно.
+
+\Problem
+$\forall x \in \mathbb{R}; \forall k \in \mathbb{N}$ үед
+\begin{equation*}
+f_k(x) = \frac{1}{k}\left(\sin^k x + \cos^k x\right)
+\end{equation*}
+бол
+\begin{equation*}
+f_4(x)-f_6(x) = \frac{1}{12}
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Бид уг тэнцэтгэлийг $12f_4(x) - 12f_6(x)=1$ гэж баталья.
+\begin{equation*}
+\begin{split}
+12\cdot\frac{1}{4}\left(\sin^4 x+\cos^4 x\right)-12\cdot\frac{1}{6}\left(\sin^6 x + \cos^6 x \right)=3\left(\sin^4 x + \cos^4 x\right) - 2\left(\sin^6 x + \cos^6 x\right) =\\
+= 3\left[\left(\sin^2 x + \cos^2 x\right)^2 - 2\sin^2 x \cos^2 x\right] - 2\left(\sin^2 x + \cos^2 x\right)\left(\sin^4 x - \sin^2 x\cos^2 x + \cos^4 x\right) =\\
+= 3-6\sin^2 x\cos^2 x - 2\left[\left(\sin^2 x + \cos^2 x\right)^2 - 3\sin^2 x\cos^2 x\right] = 3 - 2 = 1
+\end{split}
+\end{equation*}
+
+\Problem
+[AIME 2004, Jonathan Kane] $15\times 34$ хэмжээтэй $ABCD$ тэгш өнцөгтод нэгж радиустай тойрог агуулагдана. Тэгвэл уг тойрог $AC$ диагональтай огтлолцохгүй байх магадлалыг ол.
+
+\TheSolution
+
+\Problem
+[AMC12, 1999] $ABC$ гурвалжны хувьд
+\begin{equation*}
+3\sin A + 4\cos B = 6 \hspace{1cm} \text{ба} \hspace{1cm} 4\sin B + 3\cos A = 1
+\end{equation*}
+$C$ өнцгийн хэмжээг ол.
+
+\TheSolution
+Өгөгдсөн хоёр тэгшитгэлийн квадратуудын нийлбэрийг олбол
+\begin{equation*}
+24\left(\sin A\cos B + \cos A \sin B\right) = 12 \Rightarrow \sin(A+B) = \frac{1}{2}
+\end{equation*}
+\begin{equation*}
+\measuredangle C = 180^\circ - \measuredangle A - \measuredangle B \Rightarrow  \sin C = \sin(A+B) \Rightarrow 
+\begin{sqcases}
+\measuredangle C = 30^\circ\\
+\measuredangle C = 150^\circ
+\end{sqcases}
+\end{equation*}
+болно.
+Гэвч $\measuredangle C = 150^\circ$ үед $\measuredangle A < 30^\circ \Rightarrow 3\sin A + 4\cos B < \frac{3}{2}+4 < 6$  болж зөрчилдөнө. Иймд бодлогын хариу $\measuredangle C = 30^\circ$ болно.
+
+\Problem
+$\forall a \neq \frac{k\pi}{2}, k \in \mathbb{Z}$ хувьд
+\begin{equation*}
+\tg 3a - \tg 2a - \tg a = \tg 3a \tg 2a \tg a
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Дээрх тэнцэтгэл дараах тэнцэтгэлтэй эквивалент юм.
+\begin{align*}
+\tg 3a(1-\tg 2a \tg a) &= \tg 2a + \tg a\\
+\tg 3a &= \frac{\tg 2a + \tg a}{1-\tg 2a\tg a}\\
+\tg 3a &= \tg(2a + a)
+\end{align*}
+
+\Note
+Ерөнхий тохиолдолд $a_1, a_2, a_3 \neq \frac{k\pi}{2}, k \in \mathbb{Z}$ тоонуудын хувьд $a_1+a_2+a_3=0$ бол $\tg a_1 + \tg a_2 + \th a_3 = \tg a_1\tg a_2\tg a_3$ тэнцэтгэл биелнэ. Үүний баталгаа 13 ба 20 дугаар бодлоготой төстэйгөөр батлагдах тул дасгал болгон бие даан хийж гүйцэтгээрэй.
+
+\Problem
+$a, b, c, d \in [0, \pi]$ тоонууд
+\begin{align*}
+\sin a + 7\sin b &= 4\left(\sin c + 2\sin d\right)\\
+\cos a + 7\cos b &= 4\left(\cos c + 2\cos d\right)
+\end{align*}
+тэнцэтгэлүүдийг хангадаг бол
+\begin{equation*}
+2\cos(a-d) = 7\cos(b-c)
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Өгөгдсөн тэнцэтгэлүүдийг дараах хэлбэрт бичье.
+\begin{align*}
+\sin a - 8\sin d &=4\sin c - 7\sin b\\
+\cos a + 7\cos b &=4\cos c - 7\cos b
+\end{align*}
+Эдгээрийн квадратуудын нийлбэрийг эмхтгэвэл
+\begin{align*}
+1+64-16\left(\cos a\cos b + \sin a\sin b\right) &= 16 + 49 - 56\left(\cos b\cos c + \sin b\sin c\right)\\
+2\cos(a-d) &= 7\cos(b-c)
+\end{align*}
+
+\Problem
+\begin{equation*}
+\sin(x-y)+\sin(y-z)+\sin(z-x)
+\end{equation*}
+илэрхийллийг нэг гишүүнтээр илэрхийл.
+
+\TheSolution
+Синусуудын нийлбэрийн томьёогоор
+\begin{equation*}
+\sin(x-y)+\sin(y-z) = 2\sin\frac{x-z}{2}\cos\frac{x+z-2y}{2}
+\end{equation*}
+Давхар өнцгийн томьёогоор
+\begin{equation*}
+\sin(z-x) = 2\sin\frac{z-x}{2}\cos\frac{z-x}{2}
+\end{equation*}
+болно. Иймд
+\begin{multline*}
+\sin(x-y)+\sin(y-z)+\sin(z-x)
+= 2\sin\frac{x-z}{2}\left[\cos\frac{x+z-2y}{2}-\cos\frac{z-x}{2}\right] = \\
+= -4\sin\frac{x-z}{2}\sin\frac{z-y}{2}\sin\frac{x-y}{2}
+= -4\sin\frac{x-y}{2}\sin\frac{y-z}{2}\sin\frac{z-x}{2}
+\end{multline*}
+
+\Note
+Ерөнхий тохиолдолд $a+b+c=0$ байх $a, b, c \in \mathbb{R}$ тоонуудын хувьд
+\begin{equation*}
+\sin a + \sin b + \sin c = -4\sin\frac{a}{2}\sin\frac{b}{2}\sin\frac{c}{2}
+\end{equation*}
+тэнцэтгэл биелнэ. Энэ бодлого нь $a=x-y;\hspace{0.5cm} b=y-z;\hspace{0.5cm} c=z-x$ байх тухайн тохиолдол юм.
+
+\Problem
+Батал.
+\begin{equation*}
+(4\cos^2 9^\circ-3)(4\cos^2 27^\circ - 3) = \tg 9^\circ
+\end{equation*}
+
+\TheSolution
+\begin{equation*}
+\cos 3x = 4\cos^3 x - 3\cos x \Rightarrow 4\cos^2 x - 3 = \frac{\cos 3x}{\cos x}, \forall x \neq(2k+1)\cdot 90^\circ
+\end{equation*}
+болно. Иймд
+\begin{equation*}
+(4\cos^2 9^\circ - 3)(4\cos^2 27^\circ - 3) = \frac{\cos 27^\circ}{\cos 9^\circ}\cdot\frac{\cos 81^\circ}{\cos 27^\circ}
+=\frac{\cos 81^\circ}{\cos 9^\circ}=\frac{\sin 9^\circ}{\cos 9^\circ} = \tg 9^\circ
+\end{equation*}
+болно.
+
+\Problem
+$a, b \geq 0,\hspace{0.3cm} 0<x<\frac{\pi}{2}$ байх бодит тоонуудын хувьд
+\begin{equation*}
+\left(1+\frac{a}{\sin x}\right)\left(1+\frac{b}{\cos x}\right)\geq \left(1+\sqrt{2ab}\right)^2
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Тэнцэтгэл бишийн хоёр талын хаалтуудыг задлан нийлбэр хэлбэрт бичвэл
+\begin{equation*}
+1+\frac{a}{\sin x} + \frac{b}{\cos x}+\frac{ab}{\sin x \cos x} \geq 1 + 2ab + 2\sqrt{2ab}
+\end{equation*}
+болно.
+Кошийн тэнцэтгэл бишээр
+\begin{equation*}
+\frac{a}{\sin x}+\frac{b}{\cos x} \geq \frac{2\sqrt{ab}}{\sqrt{\sin x\cos x}}
+\end{equation*}
+Давхар өнцгийн томьёогоор $\sin x\cos x = \frac{1}{2}\sin 2x \leq \frac{1}{2}$ учир
+\begin{equation*}
+\frac{2\sqrt{ab}}{\sqrt{\sin x\cos x}} \geq 2\sqrt{2ab} \Rightarrow \frac{ab}{\sin x \cos x} \geq 2ab
+\end{equation*}
+болно. Сүүлийн 3 тэнцэтгэл бишийг ашиглавал
+\begin{equation*}
+1+\frac{a}{\sin x} + \frac{b}{\cos x}+\frac{ab}{\sin x \cos x} \geq 1 + 2ab + 2\sqrt{2ab}
+\end{equation*}
+болох нь батлагдана.
+
+\Problem
+$\triangle ABC$ - ны хувьд $\sin A + \sin B + \sin C \leq 1$ бол $min\left(A+B, B+C, C+A\right) < 30^\circ$ гэж батал.
+
+\TheSolution
+Бид $A \geq B \geq C$ гэе. Тэгвэл $B+C < 30^\circ$ гэж батлах шаардлагатай болно. Синусын теорем болон гурвалжны тэнцэтгэл бишийн $(b+c > a)$ чанар ёсоор $\sin B + \sin C > \sin A$ гэдгээс $\sin A + \sin B + \sin C > 2\sin A$ болно. Өгөгдсөн нөхцлийг ашиглавал $2\sin A < 1$ буюу $\sin A < \frac{1}{2}$ болно. $A$ өнцгийн хэмжээ гурвалжны бусад өнцгөөсөө их учир $A \geq \frac{A+B+C}{3} = 60^\circ$ болно. Иймд $A > 150^\circ$ учир $B+C < 30^\circ$ болох нь батлагдлаа.
+
+\Problem
+$ABC$ гурвалжны хувьд батал.
+\begin{enumerate}[(a)]
+\item
+\begin{equation*}
+\tg \frac{A}{2}\tg \frac{B}{2} + \tg \frac{B}{2} \tg \frac{C}{2} + \tg \frac{C}{2} \tg \frac{A}{2} = 1
+\end{equation*}
+\item
+\begin{equation*}
+\tg \frac{A}{2} \tg \frac{B}{2} \tg \frac{C}{2} \leq \frac{\sqrt{3}}{9}
+\end{equation*}
+\end{enumerate}
+
+\TheSolution
+\begin{enumerate}[(a)]
+\item
+Тангенсуудын нийлбэрийн томьёогоор
+\begin{equation*}
+\tg \frac{A}{2} + \tg \frac{B}{2} = \tg \frac{A+B}{2} \left(1-\tg \frac{A}{2}\tg \frac{B}{2}\right)
+\end{equation*}
+$A+B+C = 180^\circ$ тул $\frac{A+B}{2}=90^\circ - \frac{C}{2} \Rightarrow \tg\frac{A+B}{2} = \ctg\frac{C}{2}$ болно.
+Иймд
+\begin{align*}
+\tg\frac{A}{2}\tg\frac{B}{2} + \tg\frac{B}{2}\tg\frac{C}{2}+\tg\frac{C}{2}\tg\frac{A}{2} =\\
+=\tg\frac{A}{2}\tg\frac{B}{2} + \tg\frac{C}{2}\ctg\frac{C}{2}\left(1-\tg\frac{A}{2}\tg\frac{B}{2}\right) =\\
+= \tg\frac{A}{2}\tg\frac{B}{2} + 1 - \tg\frac{A}{2}\tg\frac{B}{2} = 1
+\end{align*}
+болж батлагдлаа.
+
+
+\item
+Кошийн тэнцэтгэл биш ёсоор
+\begin{align*}
+1 = \tg \frac{A}{2}\tg\frac{B}{2} + \tg\frac{B}{2}\tg\frac{C}{2}+\tg\frac{C}{2}\tg\frac{A}{2} \geq\\
+\geq 3\sqrt[3]{\left(\tg \frac{A}{2}\tg\frac{B}{2}\tg\frac{C}{2}\right)^2}
+\end{align*}
+Эндээс
+\begin{equation*}
+\tg\frac{A}{2}\tg\frac{B}{2}\tg\frac{C}{2} \leq \frac{\sqrt{3}}{9}
+\end{equation*}
+болох нь батлагдана.
+\end{enumerate}
+
+\Note
+$(a)$ -ийн эквивалент хэлбэр нь 
+\begin{equation*}
+\ctg\frac{A}{2}+\ctg\frac{B}{2} + \ctg\frac{C}{2} = \ctg\frac{A}{2}\ctg\frac{B}{2}\ctg\frac{C}{2}
+\end{equation*}
+юм.
+
+\Problem
+Хурц өнцөгт $\triangle ABC$ -ны хувьд
+\begin{enumerate}[(a)]
+\item
+$\tg A + \tg B + \tg C = \tg A\tg B \tg C$
+\item
+$\tg A \tg B\tg C \geq 3\sqrt{3}$
+\end{enumerate}
+болохыг батал.
+
+\TheSolution
+\begin{enumerate}[(a)]
+\item
+Тангенсуудын нийлбэрийн томьёо ашиглавал
+\begin{align*}
+\tg A +\tg B + \tg C = \tg (A+B)(1-\tg A \tg B) + \tg C = \tg(180^\circ - C)(1-\tg A \tg B) + \tg C =\\
+= -\tg C + \tg A\tg B\tg C + \tg C = \tg A\tg B\tg C
+\end{align*}
+болно.
+Өөрөөр хэлбэл 
+$\tg A + \tg B + \tg C = \tg A\tg B \tg C$
+болж батлагдлаа.
+\item
+Кошийн тэнцэтгэл биш ёсоор
+\begin{equation*}
+\tg A + \tg B + \tg C \geq 3\sqrt[3]{\tg A \tg B \tg C}
+\end{equation*}
+$(a)$ -г ашиглавал
+\begin{equation*}
+\tg A\tg B\tg C \geq 3\sqrt[3]{\tg A \tg B \tg C}
+\end{equation*}
+\begin{equation*}
+\left(\tg A \tg B \tg C\right)^{\frac{2}{3}} \geq 3 \Rightarrow \tg A \tg B \tg C \geq 3\sqrt{3}
+\end{equation*}
+болно.
+\end{enumerate}
+
+\Note
+$A+B+C = m\pi$ ба $A, B, C \neq \frac{k\pi}{2}$ байх $A, B, C$ өнцгүүдийн хувьд $(a)$ тэнцэтгэл биелнэ. Энд $k, m \in \mathbb{Z}$ болно.
+
+\Problem
+$\triangle ABC$ -ны хувьд $\ctg A\ctg B + \ctg B\ctg C + \ctg C\ctg A = 1$ гэж батал.
+
+Эсрэгээр нь $xy+yz+zx = 1$ байх $x,y,z \in \mathbb{R}$ тоонуудын хувьд $\ctg A = x, \ctg B = y, \ctg C = z$ байх $\triangle ABC$ оршино гэж батал.
+
+\TheSolution
+$\triangle ABC$ -ныг тэгш өнцөгт гурвалжин ба $\measuredangle A = 90^\circ$ гэе. Тэгвэл $\ctg a = 0$ ба $B+C = 90^\circ$ гэдгээс $\ctg B \ctg C = 1$ болно. Өөрөөр хэлбэл тэгш өнцөгт гурвалжны хувьд тэнцэтгэл батлагдлаа. Одоо тэгш өнцөгт биш гурвалжны хувьд баталъя. Өгөгдсөн тэнцэтгэлийг $\tg A\tg B\tg C$ -гээр үржвэл
+\begin{equation*}
+\tg A + \tg B + \tg C = \tg A\tg B\tg C
+\end{equation*}
+болно. Дээрх тэнцэтгэл үнэн болохыг бид баталсан билээ. (20-р бодлого)
+
+\Problem
+$\triangle ABC$ -ны хувьд
+\begin{equation*}
+\sin^2 \frac{A}{2} + \sin^2 \frac{B}{2} + \sin^2 \frac{C}{2} + 2\sin \frac{A}{2}\sin \frac{B}{2} \sin \frac{C}{2} = 1
+\end{equation*}
+болохыг батал. Эсрэгээр нь $x, y, z < 1$ байх эерэг бодит тоонуудын хувьд 
+\begin{equation*}
+x^2+y^2+z^2+2xyz = 1
+\end{equation*}
+чанарыг хангаж байвал $x=\sin \frac{A}{2}, y = \sin \frac{B}{2}, z= \sin\frac{C}{2}$  байх $\triangle ABC$ оршино гэж батал.
+
+\TheSolution
+Хэрвээ бид өгөгдсөн хоёр дахь тэгшитгэлийн $x$-ийг квадрат тэгшитгэлийн шийд олох аргаар олвол
+\begin{equation*}
+x=\frac{-2yz + \sqrt{4y^2z^2-4(y^2+z^2-1)}}{2} = -yz + \sqrt{(1-y^2)(1-z^2)}
+\end{equation*}
+болно. Бид $y=\sin u, z=\sin v, 0^\circ < u, v < 90^\circ$ орлуулга хийвэл
+\begin{equation*}
+x=-\sin u \sin v + \cos u\cos v = \cos(u+v)
+\end{equation*}
+болно.
+
+\Problem
+$\triangle ABC$-ны хувьд батал.
+\begin{enumerate}[(a)]
+\item
+\begin{equation*}
+\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2} \leq \frac{1}{8}
+\end{equation*}
+\item
+\begin{equation*}
+\sin^2 \frac{A}{2} + \sin^2 \frac{B}{2} + \sin^2 \frac{C}{2} \geq \frac{3}{4}
+\end{equation*}
+\item
+\begin{equation*}
+\cos^2 \frac{A}{2}+\cos^2 \frac{B}{2}+\cos^2 \frac{C}{2} \leq \frac{9}{4}
+\end{equation*}
+\item
+\begin{equation*}
+\cos \frac{A}{2}\cos \frac{B}{2} \cos \frac{C}{2} \leq \frac{3\sqrt{3}}{8}
+\end{equation*}
+\item
+\begin{equation*}
+\csc \frac{A}{2} + \csc \frac{B}{2} + \csc \frac{C}{2} \geq 6
+\end{equation*}
+\end{enumerate}
+
+\TheSolution
+\begin{enumerate}[(a)]
+\item
+Бодлого 8 дээр бид 
+\begin{equation*}
+\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2} \leq \frac{abc}{(a+b)(b+c)(c+a)}
+\end{equation*}
+болохыг баталсан.
+
+Кошийн тэнцэтгэл бишийг ашиглавал
+\begin{equation*}
+(a+b)(b+c)(c+a) \geq (2\sqrt{ab})(2\sqrt{bc})(2\sqrt{ca}) = 8abc
+\end{equation*}
+болно. Үүнийг орлуулвал
+\begin{equation*}
+\sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2} \leq \frac{1}{8}
+\end{equation*}
+болно.
+\item
+(a) хэсгийн тэнцэтгэлийг бодлого 22 дээрх
+\begin{equation*}
+\sin^2 \frac{A}{2} + \sin^2 \frac{B}{2} + \sin^2 \frac{C}{2} + 2\sin \frac{A}{2}\sin \frac{B}{2} \sin \frac{C}{2} = 1
+\end{equation*}
+тэнцэтгэлтэй ашиглавал
+\begin{equation*}
+\sin^2 \frac{A}{2} + \sin^2 \frac{B}{2} + \sin^2 \frac{C}{2} \geq 1-\frac{1}{4} = \frac{3}{4}
+\end{equation*}
+болж батлагдлаа.
+\item
+(b) хэсгийн тэнцэтгэл бишд $\sin^2 x = 1-\cos^2 x$ орлуулга хийвэл
+\begin{align*}
+3 - \cos^2 \frac{A}{2} - \cos^2 \frac{B}{2} - \cos^2 \frac{C}{2} \geq \frac{3}{4} \\
+\cos^2 \frac{A}{2} - \cos^2 \frac{B}{2} - \cos^2 \frac{C}{2} \leq 3- \frac{3}{4}\\
+\cos^2 \frac{A}{2} - \cos^2 \frac{B}{2} - \cos^2 \frac{C}{2} \leq \frac{9}{4}
+\end{align*}
+болно.
+\item
+(d) хэсгийн тэнцэтгэл бишд кошийн тэнцэтгэл биш ашиглавал
+\begin{align*}
+\cos^2 \frac{A}{2} + \cos^2 \frac{B}{2} + \cos^2 \frac{C}{2} \geq 3\sqrt[3]{\cos^2 \frac{A}{2}\cos^2 \frac{B}{2} \cos^2 \frac{C}{2}}\\
+3\sqrt[3]{\cos^2 \frac{A}{2}\cos^2 \frac{B}{2} \cos^2 \frac{C}{2}} \leq \frac{9}{4} \\
+\cos \frac{A}{2} \cos \frac{B}{2} \cos \frac{C}{2} \leq \frac{3\sqrt{3}}{8}
+\end{align*}
+болно.
+\item
+8-р бодлогыг ашиглавал $\csc \frac{A}{2} \geq \frac{b+c}{a} = \frac{b}{a} + \frac{c}{a}$ болно. Үүнтэй адилаар $\csc \frac{B}{2} \geq \frac{a}{b} + \frac{c}{b}$ ба $\csc \frac{C}{2} \geq \frac{a}{c}+\frac{b}{c}$ байна. Кошийн тэнцэтгэл биш ашиглавал
+\begin{align*}
+\csc \frac{A}{2} + \csc \frac{B}{2} + \csc \frac{C}{2} \geq \frac{b}{a} + \frac{c}{a} + \frac{a}{b} + \frac{c}{b} + \frac{a}{c} + \frac{b}{c} \geq\\
+\geq 6\sqrt[6]{\frac{b}{a}\frac{c}{a}\frac{a}{b}\frac{c}{b}\frac{a}{c}\frac{b}{c}} = 6
+\end{align*}
+болж батлагдав.
+\end{enumerate}
+\Note
+(a) -г өөр аргаар баталъя. Бодлогын нөхцлөөр $\sin \frac{A}{2}, \sin \frac{B}{2}, \sin \frac{C}{2}$ бүгд эерэг тоонууд. $t=\sqrt[3]{\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}}$ гэе. Тэгвэл бид $t \leq \frac{1}{2}$ гэж батлахад хангалттай. Кошийн тэнцэтгэл бишээр
+\begin{align*}
+\sin^2 \frac{A}{2} + \sin^2 \frac{B}{2} + \sin^2 \frac{C}{2} \geq 3t^2
+\end{align*}
+22-р бодлогод орлуулвал $3t^2 + 2t^3 \leq 1$ болно. Иймд
+\begin{align*}
+2t^3 + 3t^2 - 1 \leq 0\\
+(t+1)(2t^2 + t -1) \leq 0\\
+(t+1)^2(2t-1) \leq 0
+\end{align*}
+Эндээс харвал $t \leq \frac{1}{2}$ болж $(a)$ батлагдлаа.
+
+\Problem
+$\triangle ABC$ -ны хувьд
+\begin{enumerate}[(a)]
+\item
+\begin{equation*}
+\sin 2A + \sin 2B + \sin 2C = 4\sin A \sin B\sin C
+\end{equation*}
+\item
+\begin{equation*}
+\cos 2A + \cos 2B + \cos 2C = -1 - 4\cos A\cos B\cos C
+\end{equation*}
+\item
+\begin{equation*}
+\sin^2 A + \sin^2 B + \sin^2 C = 2+ 2\cos A \cos B \cos C
+\end{equation*}
+\item
+\begin{equation*}
+\cos^2 A + \cos^2 B + \cos^2 C + 2\cos A \cos B \cos C = 1
+\end{equation*}
+болохыг батал.
+
+Эсрэгээр нь $0< x, y, z < 1$ эерэг бодит тоонууд
+\begin{align*}
+x^2 + y^2 + z^2 + 2xyz = 1
+\end{align*} 
+чанарыг хангаж байвал $x=\cos A, y= \cos B, z=\cos C$ байх хурц өнцөгт $\triangle ABC$ оршино гэж харуул.
+\end{enumerate}
+
+\TheSolution
+$\cos 2x = 1-2\sin^2 x = 2\cos^2 x - 1$ ашиглавал (c) болон  (d) -гийн баталгаа (b)-гээс хялбархан мөрдөн гарна. Иймд бид (a) болон (b) -гийн баталгааг харуулъя.
+\begin{enumerate}[(a)]
+\item
+Синусуудын нийлбэрийн томьёо болон $A+B+C = 180^\circ$ тэнцэтгэлийг ашиглавал
+\begin{align*}
+\sin 2A + \sin 2B + \sin 2C = 2\sin (A+B)\cos(A-B) + \sin 2C = \\
+= 2\sin C \cos(A-B) + 2\sin C \cos C = 2\sin C \left[\cos (A-B) - \cos (A+B)\right] = \\
+= 2\sin C \cdot \left[-2\sin A \sin (-B)\right] = 4\sin A\sin B\sin C
+\end{align*}
+болж батлагдлаа.
+\item
+Косинусуудын нийлбэрийн томьёо болон $A+B+C = 180^\circ$  тэнцэтгэлийг ашиглавал
+\begin{align*}
+\cos 2A + \cos 2B + \cos 2C = 2\cos(A+B)\cos(A-B) + \cos^2 C -1 = \\
+= -2\cos C \cos(A-B) + \cos^2 C - 1 = -2\cos C(\cos(A-B) - \cos C) - 1 =\\
+= -2\cos C(\cos(A-B) + \cos(A+B)) - 1 = - 4\cos A \cos B\cos C -1
+\end{align*}
+болж батлагдлаа.
+\end{enumerate}
+\Note
+(d) -гийн сонирхолтой баталгааг харуулъя. Доорх систем тэгшитгэлийг авч үзье.
+\begin{align*}
+-x + (\cos B)y +(\cos C)z &= 0\\
+(\cos B)x -y + (\cos A)z &= 0\\
+(\cos C) x + (\cos A) y - z &= 0
+\end{align*}
+Тригонометрийн нийлбэр ялгаварын томъёог ашиглавал уг систем тэгшитгэлийн тэгээс ялгаатай шийд нь $(x, y, z) = (\sin A, \sin C, \sin B)$ болохыг хялбархан олж болно. Иймд уг системийн тодорхойлогч нь тэг болно. Өөрөөр хэлбэл
+\begin{equation*}
+\begin{vmatrix}
+-1 & \cos B & \cos C\\
+\cos B & -1 & \cos A\\
+\cos C & \cos A & -1
+\end{vmatrix}
+=-1+2\cos A\cos B \cos C + \cos^2 A + \cos^2 B + \cos^2 C = 0
+\end{equation*}
+болж батлагдана.
+
+
+\Problem
+$\triangle ABC$-ны хувьд
+\begin{enumerate}[(a)]
+\item
+$4R = \frac{abc}{[ABC]}$
+\item
+$2R^2\sin A\sin B\sin C = [ABC]$
+\item
+$2R^2\sin A\sin B\sin C = r(\sin A + \sin B + \sin C)$
+\item
+$r=4R\sin \frac{A}{2}\sin \frac{B}{2} \sin \frac{C}{2}$
+\item
+$a\cos A + b\cos B + c\cos C = \frac{abc}{2R^2}$
+\end{enumerate}
+
+\TheSolution
+\begin{enumerate}[(a)]
+\item
+Синусын өргөтгөсөн теоремоор
+\begin{equation*}
+R= \frac{a}{2\sin A} = \frac{abc}{2bc\sin A} = \frac{abc}{4[ABC]}
+\end{equation*}
+\item
+\begin{equation*}
+2R^2\sin A\sin B\sin C = \frac{1}{2}(2R\sin A)(2R\sin B)(\sin C) = \frac{1}{2}ab\sin C = [ABC]
+\end{equation*}
+\item
+$2R^2\sin A\sin B\sin C$-г авч үзье.
+\begin{equation*}
+2R^2\sin A \sin B\sin C = [ABC] = \frac{1}{2}bc\sin A = \frac{a+b+c}{2}\cdot r
+\end{equation*}
+болно. Синусын өргөтгөсөн теорем ашиглавал
+\begin{equation*}
+2R^2\sin A\sin B\sin C = rR(\sin A + \sin B + \sin C)
+\end{equation*}
+болно.
+\item
+Косинусын теоремоор
+\begin{equation*}
+\cos A = \frac{b^2+c^2-a^2}{2bc}
+\end{equation*}
+байна. Хагас өнцгийн теоремоор
+\begin{align*}
+\sin^2 \frac{A}{2} = \frac{1-\cos A}{2} = \frac{1}{2} - \frac{b^2 + c^2 -a^2}{4bc} = \frac{a^2-(b^2+c^2-2bc)}{4bc} =\\
+= \frac{a^2 -(b-c)^2}{4bc} = \frac{(a-b+c)(a+b-c)}{4bc} = \\
+= \frac{(2p-2b)(2p-2c)}{4bc} = \frac{(p-b)(p+b)}{bc}
+\end{align*}
+болно. Энд $p=\frac{a+b+c}{2}$ болно. Өөрөөр хэлбэл
+\begin{equation*}
+\sin \frac{A}{2} = \sqrt{\frac{(p-b)(p+b)}{bc}}
+\end{equation*}
+болно. Нөгөө 2 өнцөг дээр мөн адилаар томьёог олон үржвэрийг олвол
+\begin{equation*}
+\sin \frac{A}{2}\sin \frac{B}{2} \sin \frac{C}{2} = \frac{(p-a)(p-b)(p-c)}{abc} = \frac{p(p-a)(p-b)(p-c)}{pabc}
+\end{equation*}
+болно. Героны томьёогоор
+\begin{equation*}
+\sin \frac{A}{2}\sin \frac{B}{2} \sin \frac{C}{2} = \frac{[ABC]^2}{pabc}
+\end{equation*}
+болох ба
+\begin{equation*}
+\sin \frac{A}{2}\sin \frac{B}{2} \sin \frac{C}{2} = \frac{[ABC]}{p}\frac{[ABC]}{abc} = r\cdot \frac{1}{4R}
+\end{equation*}
+болж батлагдлаа.
+\item
+Синусын өргөтгөсөн теоремоор  $a\cos A = 2R\sin A\cdot\cos A = R\sin 2A$ болно. Үүнтэй адилаар $b\cos B = R\sin 2B$ болох ба $c\cos C = R\sin 2C$ болно.
+(a) болон (b) хоёрыг ашиглавал
+\begin{equation*}
+4R\sin A\sin B\sin C = \frac{abc}{2R^2}
+\end{equation*}
+болно. Иймд одоо бид 
+\begin{equation*}
+\sin 2A + \sin 2B + \sin 2C = 4\sin A\sin B\sin C
+\end{equation*}
+ гэж батлахад хангалттай болно. Бид дээрх тэнцэтгэлийг 24-р бодлогоор батласан билээ.
+\end{enumerate}
+
+\Problem
+$\triangle ABC$-ны хагас периметрийг $p$ гэе. Тэгвэл
+\begin{enumerate}[(a)]
+\item
+\begin{equation*}
+p=4R\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}
+\end{equation*}
+\item
+\begin{equation*}
+p \leq \frac{3\sqrt{3}}{2}R
+\end{equation*}
+\end{enumerate}
+болохыг батал.
+
+\TheSolution
+\begin{enumerate}[(a)]
+\item
+Бид $p = \frac{[ABC]}{r}$ томъёог мэдэх билээ. Уг томьёонд 25-р бодлогын (b) болон (d)-г орлуулвал
+\begin{equation*}
+p=\frac{R\sin A\sin B\sin C}{2\sin \frac{A}{2}\sin\frac{B}{2}\sin \frac{C}{2}}
+\end{equation*}
+болно. Давхар өнцгийн теорем ашиглавал
+\begin{equation*}
+p =4R\cos\frac{A}{2}\cos \frac{B}{2}\cos\frac{C}{2}
+\end{equation*}
+болж батлагдлаа.
+\item
+23-р бодлогын (d) хэсэг болон дээрх тэнцэтгэлийг ашиглан батлана.
+\end{enumerate}
+
+\Problem
+$\triangle ABC$-ны хувьд
+\begin{enumerate}[(a)]
+\item
+\begin{equation*}
+\cos A + \cos B + \cos C = 1 + 4\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}
+\end{equation*}
+\item
+\begin{equation*}
+\cos A + \cos B + \cos C \leq \frac{3}{2}
+\end{equation*}
+болохыг харуул.
+\end{enumerate}
+
+\TheSolution
+
+\Problem
+$\triangle ABC$-ны хувьд
+\begin{enumerate}[(a)]
+\item
+\begin{equation*}
+\cos A \cos B \cos C \leq \frac{1}{8}
+\end{equation*}
+\item
+\begin{equation*}
+\sin A \sin B \sin C \leq \frac{3\sqrt{3}}{8}
+\end{equation*}
+\item
+\begin{equation*}
+\sin A + \sin B + \sin C \leq \frac{3\sqrt{3}}{2}
+\end{equation*}
+\item
+\begin{equation*}
+\cos^2 A + \cos^2 B + \cos^2 C \geq \frac{3}{4}
+\end{equation*}
+\item
+\begin{equation*}
+\sin^2 A + \sin^2 B + \sin^2 C \leq \frac{9}{4}
+\end{equation*}
+\item
+\begin{equation*}
+\cos 2A + \cos 2B + \cos 2C \geq -\frac{3}{2}
+\end{equation*}
+\item
+\begin{equation*}
+\sin 2A + \sin 2B + \sin 2C \leq \frac{3\sqrt{3}}{2}
+\end{equation*}
+\end{enumerate}
+болохыг батал.
+
+\TheSolution
+
+\Problem
+$x \neq \frac{k\pi}{6}, (k \in \mathbb{Z})$ бол 
+\begin{equation*}
+\frac{\tg 3x}{\tg x} = \tg \left(\frac{\pi}{3}-x \right)\tg \left(\frac{\pi}{3} + x\right)
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Гурван давхар өнцгийн томъёогоор
+\begin{align*}
+\tg 3x = \frac{3\tg x - \tg^3 x}{1-3\tg^2 x} = \tg x \cdot \frac{(\sqrt{3}-\tg x)(\sqrt{3}+\tg x)}{(1-\sqrt{3}\tg x)(1+\sqrt{3}\tg x)} = \\
+= \frac{\sqrt{3}-\tg x}{1+\sqrt{3}\tg x}\cdot\tg x\cdot \frac{\sqrt{3}+\tg x}{1-\sqrt{3}\tg x} =
+\tg \left(\frac{\pi}{3}-x\right)\tg x \tg \left(\frac{\pi}{3} + x\right)
+\end{align*}
+болж батлагдлаа.
+
+\Problem
+[AMC12P 2002]
+\begin{equation*}
+(1+\tg 1^\circ)(1+\tg 2^\circ)\cdots(1+\tg 45^\circ) = 2^n
+\end{equation*}
+байх $n$-г ол.
+
+\ASolution
+\begin{align*}
+1+\tg k^\circ = 1+\frac{\sin k^\circ}{\cos k^\circ} = \frac{\cos k^\circ + \sin k^\circ}{\cos k^\circ} = \\
+= \frac{\sqrt{2\sin(45^\circ + k^\circ)}}{\cos k^\circ} = \frac{\sqrt{2}\cos(45^\circ-k^\circ)}{\cos k^\circ}
+\end{align*}
+Иймээс
+\begin{align*}
+(1+\tg k^\circ)(1+\tg(45^\circ-k^\circ)) = \frac{\sqrt{2}\cos(45^\circ - k^\circ)}{\cos k^\circ}\cdot \frac{\sqrt{2}\cos k^\circ}{\cos (45^\circ - k^\circ)} = 2
+\end{align*}
+болох ба цаашилбал
+\begin{align*}
+(1+\tg 1^\circ)(1+\tg 2^\circ)\cdots(1+\tg 45^\circ) =\\
+(1+\tg 1^\circ)(1+\tg 44^\circ)(1+\tg 2^\circ)(1+\tg 43^\circ)\\
+\cdots(1+\tg 22^\circ)(1+\tg 23^\circ)(1+\tg 45^\circ) = 2^{23}
+\end{align*}
+Иймд $n=23$ болно.
+
+\ASolution
+\begin{align*}
+(1+\tg k^\circ)(1+\tg (45^\circ-k^\circ)) = 1+\left[\tg k^\circ + \tg (45^\circ - k^\circ)\right] + \tg k^\circ \tg (45^\circ - k^\circ) = \\
+= 1+\tg 45^\circ\left[1- \tg k^\circ \tg(45^\circ - k^\circ)\right] + \tg k^\circ \tg (45^\circ - k^\circ) = 2
+\end{align*}
+болох ба
+\begin{align*}
+(1+\tg 1^\circ)(1+\tg 2^\circ)\cdots(1+\tg 45^\circ) =\\
+(1+\tg 1^\circ)(1+\tg 44^\circ)(1+\tg 2^\circ)(1+\tg 43^\circ)\\
+\cdots(1+\tg 22^\circ)(1+\tg 23^\circ)(1+\tg 45^\circ) = 2^{23}
+\end{align*}
+Иймд $n=23$ болно.
+
+\Problem
+[AIME 2003] Координатын хавтгайд $A=(0, 0); B=(b, 2)$ цэгүүд өгчээ. $ABCDEF$ зөв зургаан өнцөгтийн $\measuredangle FAB = 120^\circ, AB \| DE, BC\|EF, CD\|FA$ байх ба оройнуудын $y$ тэнхлэг дээрх координатын олонлог нь ${0, 2, 4, 6, 8}$ болно. Зургаан өнцөгтийн талбай $m\sqrt{n}$ бол $m+n$-г ол. Энд $m, n > 0$ ба $n$ нь ямар ч анхны тооны квадратад хуваагдахгүй болно.
+
+\Note
 
 \end{document}
