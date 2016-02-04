@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.18)  31 JAN 2016 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.18)  5 FEB 2016 00:30
 entering extended mode
 **./nom1.tex
 (nom1.tex
@@ -655,7 +655,20 @@ Overfull \hbox (1.4439pt too wide) in paragraph at lines 885--885
 [] 
  []
 
-[16] [17] (nom1.aux) ) 
+[16] [17]
+Overfull \hbox (106.63446pt too wide) in paragraph at lines 1001--1001
+[] 
+ []
+
+[18]
+Overfull \hbox (29.464pt too wide) in paragraph at lines 1022--1024
+[]\T2A/cmr/bx/it/10 Бодолт: \T2A/cmr/m/n/10 Бид-ний олох илэр-хийл-лийн ут-гыг 
+$\OML/cmm/m/it/10 P$ \T2A/cmr/m/n/10 гээд $\OML/cmm/m/it/10 Q \OT1/cmr/m/n/10 =
+ [] \OML/cmm/m/it/10 a [] \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 a [] \OT1/cmr/m/n/1
+0 3\OML/cmm/m/it/10 a [] [] \OT1/cmr/m/n/10 999\OML/cmm/m/it/10 a$
+ []
+
+[19] [20] [21] (nom1.aux) ) 
 Here is how much of TeX's memory you used:
  2481 strings out of 493634
  26910 string characters out of 3141320
@@ -664,28 +677,28 @@ Here is how much of TeX's memory you used:
  20235 words of font info for 53 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  34i,17n,26p,700b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\l
-h\lh-t2a\dpi600\lasl1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\lh\lh-t2a\dpi600\labi1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1000.pk> <C:\Users\nmd\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk> <C:\Users\nmd\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2074.pk> <C:\Users\nmd\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi600\larm1200.pk> <C:\User
-s\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1728.pk><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nom1.pdf (18 pages, 211578 bytes).
+ <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\lh\lh-t2a\dpi600\lasl1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\lh\lh-t2a\dpi600\labi1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk> <C:\Users\nmd\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1000.pk> <C:\Users\nmd\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk> <C:\Users\nmd\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2074.pk> <C:\Users\nmd\A
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi600\larm1200.pk> <C:
+\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1728.p
+k><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on nom1.pdf (22 pages, 237427 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
+ 323 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

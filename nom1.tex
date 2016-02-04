@@ -896,4 +896,229 @@ $x \neq \frac{k\pi}{6}, (k \in \mathbb{Z})$ бол
 
 \Note
 
+\Problem
+Тооны машин дээрх урвууг олдог товчлуур эвдэрсэн гэж саная. Тэгвэл тригонометрийн $\sin, \cos, \tg, \arcsin, \arccos, \arctg$ товчлууруудыг ашиглан аливаа тооны урвууг олж болохыг харуул.
+
+\TheSolution
+$0<\theta < \pi/2$ өнцгийн хувьд $\arccos\sin \theta = \pi/2 - \theta$ ба $\tg\left(\frac{\pi}{2} - \theta\right) = \frac{1}{\tg\theta}$ байна. $\tg\theta$ функцийн утгын муж нь $E(\tg\theta): [0, \inf[$ байх тул дурын $x > 0$ тооны хувьд
+\begin{equation*}
+\tg\arccos\sin\arctg x = \tg \left(\frac{\pi}{2} - \arctg x \right) = \frac{1}{x}
+\end{equation*}
+болно. Уг бодлогын өөр нэг хариу нь $\tg\arcsin\cos\arctg$ болно.
+
+\Problem
+$\triangle ABC$ -ны хувьд $A-B=120^\circ$ ба $R=8r$ бол $C$-г ол.
+
+\TheSolution
+25-р бодлогын (d)-г ашиглавал
+\begin{equation*}
+2\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2} = \frac{1}{16}
+\end{equation*}
+болох ба синусуудын нийлбэрийн томъёогоор
+\begin{equation*}
+\left(\cos\frac{A-B}{2} - \cos\frac{A+B}{2}\right)\sin\frac{C}{2} = \frac{1}{16}
+\end{equation*}
+болно. $A-B=120^\circ$ болохыг тооцвол
+\begin{align*}
+\left(\frac{1}{2} - \sin\frac{C}{2}\right)\sin\frac{C}{2} = \frac{1}{16} \\
+\left(\frac{1}{4} - \sin\frac{C}{2}\right)^2 = 0
+\end{align*}
+болно. Эндээс үзвэл $\sin\frac{C}{2} = \frac{1}{4}$ болох ба $\cos C = 1-2\sin^2 \frac{C}{2} = \frac{7}{8}$ болно.
+
+\Problem
+$\triangle ABC$ -ны хувьд
+\begin{equation*}
+\frac{a-b}{a+b} = \tg\frac{A-B}{2}\tg\frac{C}{2}
+\end{equation*}
+батал.
+
+\TheSolution
+Синусын теорем болон синусуудын ялгаварын томъёог хэрэглэвэл
+\begin{align*}
+\frac{a-b}{a+b} = \frac{\sin A - \sin B}{\sin A + \sin B} = \frac{2\sin\frac{A-B}{2}\cos\frac{A+B}{2}}{2\sin\frac{A+B}{2}\cos\frac{A-B}{2}} = \\
+= \tg\frac{A-B}{2}\ctg\frac{A+B}{2} = \tg\frac{A-B}{2}\tg\frac{C}{2}
+\end{align*}
+болно.
+
+\Problem
+$\triangle ABC$-ны хувьд $\frac{a}{b} = 2+\sqrt{3}$ ба $C = 60^\circ$ бол $A$ болон $B$ өнцгийн хэмжээг ол.
+
+\TheSolution
+Өмнөх бодлогын үр дүнг ашиглавал
+\begin{equation*}
+\frac{\frac{a}{b} - 1}{\frac{a}{b} + 1} = \tg \frac{A-B}{2}\tg\frac{C}{2}
+\end{equation*}
+болно. Өөрөөр хэлбэл
+\begin{equation*}
+\frac{1+\sqrt{3}}{\sqrt{3}+3} = \tg\frac{A-B}{2}\cdot \frac{1}{\sqrt{3}}
+\end{equation*}
+гэдгээс $\tg\frac{A-B}{2} = 1$ болно. Иймд $A-B = 90^\circ$ болох ба $A+B = 180^\circ - C = 120^\circ$ тул $A=105^\circ$ ба $B=15^\circ$ болно.
+
+\Problem
+$a, b, c$ нь $-1$ болон $1$-ээс ялгаатай бодит тоонууд ба $a+b+c = abc$ бол
+\begin{equation*}
+\frac{a}{1-a^2} + \frac{b}{1-b^2} + \frac{c}{1-c^2} = \frac{4abc}{(1-a^2)(1-b^2)(1-c^2)}
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Бид 20-р бодлогын \textbf{Тэмдэглэл}-ийг эргэн харья. $A+B+C = m\pi$ ба $A, B, C \neq \frac{k\pi}{2}$ байх $A, B, C$ өнцгүүдийн хувьд
+\begin{equation*}
+\tg A + \tg B + \tg C  = \tg A \tg B \tg C
+\end{equation*}
+гэсэн тэнцэтгэл биелнэ. Энд $m, k \in \mathbb{Z}$ болно.
+
+$a=\tg x, b = \tg y, c=\tg z$ гэе. Тэгвэл бодлогын $a+b+c = abc$ нөхцлөөс $\tg(x+y+z) = 0$ болно. Эндээс давхар өнцгийн тангенсийн томьёогоор
+\begin{equation*}
+\tg (2x+2y+2z) = \frac{2\tg (x+y+z)}{1-\tg^2 (x+y+z)} = 0
+\end{equation*}
+болох тул
+\begin{equation*}
+\tg 2x + \tg 2y + \tg 2z = \tg 2x\tg 2y\tg 2z
+\end{equation*}
+болно. Давхар өнцгийн тангенсийн томьёогоор задалж бичвэл
+\begin{equation*}
+\frac{2\tg x}{1-\tg^2 x} + \frac{2\tg y}{1-\tg^2 y} + \frac{2\tg z}{1-\tg^2 z} = \frac{2\tg x}{1-\tg^2 x}\cdot           \frac{2\tg y}{1-\tg^2 y}\cdot \frac{2\tg z}{1-\tg^2 z}
+\end{equation*}
+болох ба $a, b, c$ -г орлуулвал
+\begin{equation*}
+\frac{a}{1-a^2} + \frac{b}{1-b^2} + \frac{c}{1-c^2} = \frac{4abc}{(1-a^2)(1-b^2)(1-c^2)}
+\end{equation*}
+болно.
+
+\Problem
+$\triangle ABC$ гурвалжин адил хажуут байх зайлшгүй бөгөөд хүрэлцээтэй нөхцөл нь
+\begin{equation*}
+a\cos B + b\cos C + c\cos  A = \frac{a+b+c}{2}
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Синусын өргөтгөсөн теоремоор $a=2R\sin A, b = 2R\sin B, c = 2R\sin C$ байна. Тэгвэл дээрх тэнцэтгэл
+\begin{align*}
+2\sin A\cos B + 2\sin B\cos C + 2\sin C\cos A = \sin A + \sin B + \sin C\\
+\sin(A+B) + \sin(A-B) + \sin(B+C) + \sin(B-C) + \sin(C+A) + \sin(C-A) = \sin A + \sin B + \sin C
+\end{align*}
+болно. Энд $A+B+C = 180^\circ$ гэдгээс $\sin (A+B) = \sin C$, $\sin (B+C) = \sin A$, $\sin (C+A) = \sin B$ болох тул
+\begin{equation*}
+\sin (A-B) + \sin (B-C) + \sin (C-A) = 0
+\end{equation*}
+болно. 15-р бодлогын үр дүнг ашиглавал
+\begin{equation*}
+4\sin\frac{A-B}{2} \sin\frac{B-C}{2} \sin\frac{C-A}{2} = 0
+\end{equation*}
+болно. Эндээс $\triangle ABC$ адил хажуут гурвалжин байх зайлшгүй бөгөөд хүрэлцээтэй нөхцөл нь
+\begin{equation*}
+a\cos B + b\cos C + c\cos  A = \frac{a+b+c}{2}
+\end{equation*}
+болох нь батлагдлаа.
+
+\Problem
+$a=\frac{2\pi}{1999}$ бол дараах илэрхийллийн утгыг тооцоол.
+\begin{equation*}
+\cos a\cos 2a\cos 3a \cdots \cos 999a
+\end{equation*}
+
+\TheSolution
+Бидний олох илэрхийллийн утгыг $P$ гээд $Q = \sin a\sin 2a \sin 3a  \cdots \sin 999a$ гэе. Тэгвэл
+\begin{align*}
+2^999 PQ = (2\sin a\cos a)(2\sin 2a\cos 2a)\cdots(2\sin 999a\cos 999a) = \\
+= \sin 2a\sin 4a\sin 6a \cdots \sin 1998a = \\
+= (\sin 2a\sin 4a\sin 6a \cdots \sin 998a)\left[-\sin(2\pi-1000a)\right]\cdot \left[-\sin(2\pi-1002a)\right]\cdot\\
+\cdot \left[-\sin(2\pi-1004a)\right]\cdots \left[-\sin(2\pi-1998a)\right] = \\
+ = \sin 2a\sin 4a \cdots \sin 998a \sin 999a \sin 997a \cdots \sin a = Q
+\end{align*}
+$Q \neq 0$ гэдэг нь ойлгомжтой тул $P = \frac{1}{2^999}$ болно.
+
+\Problem
+$\alpha, \beta \neq \frac{k\pi}{2}$ ба $k \in \mathbb{Z}$ бол
+\begin{equation*}
+\frac{\sec^4 \alpha}{\tg^2 \beta} + \frac{\sec^4 \beta}{\tg^2 \alpha}
+\end{equation*}
+илэрхийллийн хамгийн бага утгыг ол.
+
+\TheSolution
+$a=\tg^ \alpha, b = \tg^2 \alpha$ гэе. Тэгвэл $a, b > 0$ тоонуудын хувьд
+\begin{equation*}
+\frac{(a+1)^2}{b} + \frac{(b+1)^2}{a}
+\end{equation*}
+илэрхийллийн хамгийн бага утгыг олоход хангалттай болно.
+\begin{align*}
+\frac{(a+1)^2}{b} + \frac{(b+1)^2}{a} = \frac{a^2+2a+1}{b} + \frac{b^2 + 2b + 1}{a} = \\
+ = \left(\frac{a^2}{b} + \frac{1}{b} + \frac{b^2}{a} + \frac{1}{a}\right) + 2\left(\frac{a}{b} + \frac{b}{a}\right)
+\end{align*}
+болно. Кошийн тэнцэтгэл бишээр
+\begin{equation*}
+\left(\frac{a^2}{b} + \frac{1}{b} + \frac{b^2}{a} + \frac{1}{a}\right) + 2\left(\frac{a}{b} + \frac{b}{a}\right) \geq
+4\sqrt[4]{\frac{a^2}{b}\cdot \frac{1}{b}\cdot\frac{b^2}{a}\cdot \frac{1}{a}} + 4\sqrt{\frac{a}{b}\cdot \frac{b}{a}} = 8
+\end{equation*}
+болно. Дээрх тэнцэтгэл бишийн тэнцэх нөхцөл нь $a=b = 1$ болно. Өөрөөр хэлбэл $\alpha = \pm 45^\circ + k\cdot 180^\circ$, $\beta = \pm 45^\circ + k\cdot 180^\circ$, $k \in \mathbb{Z}$ үед өгөгдсөн илэрхийлэл хамгийн бага утгаа буюу $8$ гэсэн утга авна.
+
+\Problem
+$0<x<\frac{\pi}{2}$ бол
+\begin{equation*}
+\frac{(\sin x)^{2y}}{(\cos x)^{y^2/2}} + \frac{(\cos x)^{2y}}{(\sin)^{y^2/2}} = \sin 2x
+\end{equation*}
+тэгшитгэлийг хангах бүх $(x, y)$ хос шийдийг ол.
+
+\TheSolution
+Кошийн тэнцэтгэл бишээр
+\begin{equation*}
+\frac{(\sin x)^{2y}}{(\cos x)^{y^2/2}} + \frac{(\cos x)^{2y}}{(\sin)^{y^2/2}} \geq 2(\sin x\cos x)^{y-y^2/4}
+\end{equation*}
+гэдгээс
+\begin{equation*}
+2\sin x\cos x = \sin 2x \geq 2(\sin x\cos x)^{y-y^2/4}
+\end{equation*}
+болно. $\sin x\cos x < 1$ учир $1 \leq y - y^2/4 \Rightarrow (1-y/2)^2 \leq 0$ болно. Дээрх тэнцэтгэл бишүүдийн тэнцэх нөхцлийг авч үзвэл $y =2$ ба $\sin x = \cos x$ болох тул өгөгдсөн тэгшитгэлийн цор ганц хос шийд нь $(x, y) = \left(\frac{\pi}{4}, 2\right)$ болно.
+
+\Problem
+$\cos 1^\circ$ иррационал тоо болохыг батал.
+
+\TheSolution
+Эсрэгээр нь $\cos 1^\circ$ рационал тоо гэе. Тэгвэл дурын $n \geq 1$  тооны хувьд
+\begin{equation*}
+\cos (n^\circ + 1^\circ) + \cos (n^\circ - 1^\circ) = 2\cos n^\circ \cos 1^\circ
+\end{equation*}
+тэнцэтгэл биелэх тул математик индукцын зарчим ёсоор $\cos 2^\circ$, $\cos 3^\circ \cdots$  тоонууд рационал тоо болно. Гэвч $\cos 30^\circ$ иррационал тоо болохыг бид мэдэх тул зөрчилд хүрнэ. Иймд $\cos 1^\circ$ рационал тоо биш болох нь батлагдлаа.
+
+\Problem
+[USAMO 2002 proposal by Cecil Rousseau] Хэрвээ $x_1^2 + x_2^2 = y_1^2 + y_2^2 = c^2$ бол
+\begin{equation*}
+S = (1-x_1)(1-y_1) + (1-x_2)(1-y_2)
+\end{equation*}
+илэрхийллийн хамгийн их утгыг ол.
+
+\TheSolution
+$x_1, x_2$ хоёрыг $P$ цэгийн координатууд гэвэл бодлогын нөхцлөөс $P$ цэг координатын эх дээр төвтэй $c$ радиустай тойрог дээр оршино. Иймд бид $x_1 = c\cos \theta$, $x_2 = c\sin \theta$ гэж илэрхийлж болно. Үүнтэй адилаар $y_1 = c\cos \phi$, $y_2 = c\sin \phi$ болно. Тэгвэл
+\begin{align*}
+S = 2-c(\cos \theta + \sin \theta + \cos \phi + \sin \phi) + c^2 (\cos \theta\cos \phi + \sin \theta \sin \phi) = \\
+ = 2 - \sqrt{2}c\left[\sin(\theta + \pi/4) + \sin(\phi + \pi/4)\right] + c^2 \cos(\theta - \phi) \leq \\
+ \leq 2 + 2\sqrt{2}c + c^2 = (\sqrt{2} + c)^2
+\end{align*}
+болно. Тэнцэх нөхцөл нь $\theta = \phi = 5\pi/4$. Өөрөөр хэлбэл $x_1 = x_2 = y_1 = y_2 = \frac{-c\sqrt{2}}{2}$ үед өгөгдсөн илэрхийллийн утга хамгийн их буюу $S = (\sqrt{2}+ c)^2$ болно.
+
+\Problem
+Дурын $0<a, b < \frac{\pi}{2}$ тоонуудын хувьд
+\begin{equation*}
+\frac{\sin^3 a}{\sin b} + \frac{\cos^3 a}{\cos b} \geq \sec(a-b)
+\end{equation*}
+тэнцэтгэл бишийг батал.
+
+\TheSolution
+Тэнцэтгэл бишийн хоёр талыг $\sin a\sin b + \cos a\cos b = \cos(a-b)$ тэнцэтгэлээр үржвэл
+\begin{equation*}
+\left(\frac{\sin^3 a}{\sin b} + \frac{\cos^3 a}{\cos b}\right)\left(\sin a \sin b + \cos a \cos b\right) \geq 1
+\end{equation*}
+болно. Тэнцэтгэл бишийн зүүн талын хаалтыг задалж кошийн тэнцэтгэл биш ашиглавал
+\begin{align*}
+\sin^4 a + \frac{\cos^3 a \sin a \sin b}{\cos b} + \frac{\sin^3 a\cos a \cos b}{\sin b} + \cos^4 a \geq \\
+\geq \sin^4 a + 2\sqrt{\cos^4 a\sin^4 a} + \cos^4 = (\sin^2 a + \cos^2 a)^2 = 1
+\end{align*}
+болж батлагдав.
+
+\Problem
+Хэрэв $\sin \alpha \cos \beta = -\frac{1}{2}$ бол $\cos \alpha \sin \beta$-гийн боломжит бүх утгыг ол.
+
+\TheSolution
 \end{document}
