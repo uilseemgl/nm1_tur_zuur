@@ -127,7 +127,7 @@ $\forall a > 1$ тооны хувьд $y=a^x$  функц өсөх функц б
 1-\ctg 23^\circ = \frac{2}{1-\ctg 22^\circ}
 \end{equation*}
 
-\TheSolution
+\ASolution
 \begin{equation*}
 \left(1-\ctg 23^\circ\right)\left(1-\ctg 22^\circ\right) = 2
 \end{equation*}
@@ -140,11 +140,11 @@ $\forall a > 1$ тооны хувьд $y=a^x$  функц өсөх функц б
 \end{split}
 \end{equation*}
 
-\TheSolution Котангенсийн өнцгүүдийн нийлбэрийн томьёогоор
+\ASolution Котангенсийн өнцгүүдийн нийлбэрийн томьёогоор
 \begin{equation*}
 \frac{\ctg 22^\circ\ctg 23^\circ-1}{\ctg 22^\circ+\ctg 23^\circ}=\ctg\left(22^\circ+23^\circ\right)=\ctg 45^\circ = 1
 \end{equation*}
-Эндээс $\ctg 22^\circ\ctg 23^\circ - 1 = \ctg 22^\circ + \ctg 23^circ$ буюу
+Эндээс $\ctg 22^\circ\ctg 23^\circ - 1 = \ctg 22^\circ + \ctg 23^\circ$ буюу
 \begin{equation*}
 1-\ctg 22^\circ - \ctg 23^\circ + \ctg 22^\circ\ctg 23^\circ = 2
 \end{equation*}
@@ -189,7 +189,10 @@ x = \frac{11\pi}{36}
 \]
 
 \Problem
+$x^2 + y^2 \leq 100$ ба $\sin (x+y) \geq 0$ нөхцлүүдийг хангах $(x, y)$ цэгүүдээс бүрдэх $\mathcal{R}$ дүрсийн талбайг ол.
 
+\TheSolution
+$x^2 + y^2 \leq 100$ тэнцэтгэл бишээр илэрхийлэгдэх дугуйг $\mathcal{C}$ гэе. $\sin (x+y) = 0$ байх зайлшгүй бөгөөд хүрэлцээтэй нөхцөл нь $x+ y = k\pi$ ($k$ нь бүхэл тоо) учир $\mathcal{C}$ дугуй $x + y = k\pi$ тэгшитгэлийг хангах параллел шулуунуудаар огтологдох ба шулуунуудын хооронд $\sin (x+y) > 0$ эсвэл $\sin(x+y) < 0$ тэнцэтгэл бишүүдийг хангах $(x, y)$ цэгүүдийн мужууд оршино. $\sin(-x-y) = -\sin (x+y)$ учир уг хоёр тэнцэтгэл бишүүдийг хангах цэгүүдийн мужууд нь координатын эхийн хувьд тэгш хэмтэй юм. Иймд бидний олох $\mathcal{R}$ дүрсийн талбай нь $\mathcal{C}$ дугуйн талбайн хагас буюу $50\pi$ болно.
 
 \Problem
 $\vartriangle ABC$-ны хувьд $\sin \frac{A}{2}\leq\frac{a}{b+c}$ болохыг харуул.
@@ -250,16 +253,43 @@ f_4(x)-f_6(x) = \frac{1}{12}
 \end{equation*}
 
 \Problem
-[AIME 2004, Jonathan Kane] $15\times 34$ хэмжээтэй $ABCD$ тэгш өнцөгтод нэгж радиустай тойрог агуулагдана. Тэгвэл уг тойрог $AC$ диагональтай огтлолцохгүй байх магадлалыг ол.
+[AIME 2004, Jonathan Kane] $15\times 36$ хэмжээтэй $ABCD$ тэгш өнцөгтөд нэгж радиустай тойрог агуулагдана. Тэгвэл уг тойрог $AC$ диагональтай огтлолцохгүй байх магадлалыг ол.
 
-\TheSolution
+\Note
+Тойрог бүхлээрээ тэгш өнцөгтөд агуулагдаж байхын тулд тойргийн төв $13\times 34$ харьцаатай тэгш өнцөг дотор оршино. Иймд бидний олох ёстой магадлал тойргийн төвөөс $AC$ диагональ хүртэлх зай $1$-ээс их байх магадлалгыг олохтой адил юм. Энэхүү магадлал нь $13\times 34$ тэгш өнцөгтийн сонгогдсон нэг цэгээс $\triangle ABC$, $\triangle CDA$ -ны тал бүр хүртэлх зай $1$-ээс их байх магадлалтай тэнцүү юм. $|AB| = 36; |BC| = 15 \Rightarrow |AC| = 39$ болно. $\triangle ABC$ -ны дотор талд талуудаас нэгж зайтай байх шулуунуудыг татаж огтлолцлын цэгийг $E, F, G$ гэе. Тэгвэл $\triangle ABC$, $\triangle EFG$ гурвалжнууд төсөөтэй гурвалжнууд байна. Иймд бидний олох магадлал
+\begin{equation*}
+\frac{2\cdot S_{\triangle EFG}}{13 \cdot 34} = \left(\frac{|EF|}{|AB|}\right)^2\cdot \frac{2\cdot S_{\triangle ABC}}{13\cdot 34} = 
+\left(\frac{|EF|}{|AB|}\right)^2\cdot \frac{270}{221}
+\end{equation*}
+болно. $E, F, G$ цэгүүд нь $\triangle ABC$-ны биссектрисүүд дээр орших ба биссектрисүүдийн огтлолцлын цэг буюу уг гурвалжинд багтсан тойргийн төвийг $I$ гэж тэмдэглэе.
+
+\ASolution
+$E, F$ цэгүүдийн $AB$ талд дээрх проекцийг нь харгалзан $E_1, F_1$ гэе. Тэгвэл $|BF_1| = |FF_1| = |EE_1| = 1$ болно. $\angle EAB = \theta$ гэвэл $\angle CAB = 2\theta$, $\sin 2\theta = \frac{5}{12}$, $\cos 2\theta = \frac{12}{13}$ болно.  Иймд
+\begin{equation*}
+\tg \theta = \frac{1-\cos 2\theta}{\sin 2\theta} =\frac{1}{5}
+\end{equation*}
+болох ба $\frac{|EE_1|}{AE_1} = \tg \theta = \frac{1}{5} \Rightarrow |AE_1| = 5$ болно. Иймд $|EF| = |E_1 F_1| = 30$ гэдгээс бидний олох магадлал $\frac{375}{442}$ болно.
+
+\ASolution
+$A = (0,0), B=(36,0), C = (36,15)$ гэе. $E$ цэг $\angle CAB$ өнцгийн биссектрис дээр орших учир
+\begin{equation*}
+|\overrightarrow{AB}|\overrightarrow{AC} + |\overrightarrow{AC}|\overrightarrow{AB} = 36\cdot [36,15]+ 39\cdot [36, 0] = 36\cdot 15 \cdot [5, 1]
+\end{equation*}
+вектортой параллел байна. Иймд $AE$ хэрчмийн налуу нь $\frac{1}{5}$ болох ба $|EE_1| = 5$ болж өмнөх бодолттой адилаар магадлал нь $\frac{375}{442}$ болно.
+
+\ASolution
+$E, F, G$ цэгүүд нь $\triangle ABC$ -ны биссектрисүүд дээр орших тул $I$ цэг нь $\triangle EFG$ -нд багтсан тойргийн төв болно. Иймд хэрэв $\triangle ABC$ -нд багтсан тойргийн радиусыг $r$ гэвэл $\triangle EFG$ -нд багтсан тойргийн радиус $r-1$ болно. Төсөөтэй гурвалжнуудын чанар ёсоор бидний олох магадлал $\left(\frac{r-1}{r}\right)^2\cdot \frac{270}{221}$ болно.
+\begin{equation*}
+r(|AB|+|BC|+|CA|) = 2(S_{\triangle AIB} + S_{\triangle BIC} + S_{\triangle CIA}) = 2S_{\triangle ABC} = |AB|\cdot|BC|
+\end{equation*}
+учир $r = 6$ болно. Иймд бидний олох магадлал $\frac{375}{442}$ болно.
 
 \Problem
 [AMC12, 1999] $ABC$ гурвалжны хувьд
 \begin{equation*}
 3\sin A + 4\cos B = 6 \hspace{1cm} \text{ба} \hspace{1cm} 4\sin B + 3\cos A = 1
 \end{equation*}
-$C$ өнцгийн хэмжээг ол.
+бол $C$ өнцгийн хэмжээг ол.
 
 \TheSolution
 Өгөгдсөн хоёр тэгшитгэлийн квадратуудын нийлбэрийг олбол
@@ -801,6 +831,29 @@ $\triangle ABC$-ны хувьд
 \end{enumerate}
 
 \TheSolution
+\begin{equation*}
+\cos A + \cos B = 2\cos \frac{A+B}{2}\cos \frac{A-B}{2} = 2\sin \frac{C}{2}\cos \frac{A-B}{2}
+\end{equation*}
+\begin{equation*}
+1-\cos C = 2\sin^2 \frac{C}{2} = 2\sin \frac{C}{2}\cos \frac{A+B}{2}
+\end{equation*}
+эдгээрийг тэнцэтгэлдээ орлуулвал
+\begin{align*}
+&\cos A + \cos B + \cos C = 1 + 4\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}\\
+&\cos A + \cos B + \cos C -1 = 4\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}\\
+&2\sin \frac{C}{2}\cos \frac{A-B}{2} - 2\sin \frac{C}{2}\cos \frac{A+B}{2} = 4\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}\\
+&2\sin \frac{C}{2} \left[\cos \frac{A-B}{2} - \cos \frac{A+B}{2}\right] = 4\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}\\
+&2\sin \frac{C}{2} \cdot 2\sin \frac{A}{2} \sin \frac{B}{2} = 4\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}
+\end{align*}
+болж (a) батлагдлаа.
+
+25 дугаар бодлогын (c) -г ашиглавал
+\begin{equation*}
+\cos A + \cos B + \cos C = 1+\frac{r}{R}
+\end{equation*}
+болно.
+
+Гурвалжны багтаасан ба гурвалжинд багтсан тойргийн төвүүд болон радиусиудыг харгалзан $O, I, R, r$ гэвэл эйлерийн теорем ёсоор $|OI|^2 = R^2 - 2Rr$ болно. $|OI|^2 \geq 0$ учир $\frac{r}{R} \leq \frac{1}{2}$ болно. Үүнийг дээрх тэнцэтгэлд орлуулвал (b) батлагдана.
 
 \Problem
 $\triangle ABC$-ны хувьд
@@ -837,6 +890,36 @@ $\triangle ABC$-ны хувьд
 болохыг батал.
 
 \TheSolution
+(a) -гийн хувьд $\triangle ABC$ нь мохоо өнцөгт гурвалжин байвал тэнцэтгэл бишийн зүүн гар тал сөрөг болох тул тэнцэтгэл биш биелнэ.
+$t=\sqrt[3]{\cos \frac{A}{2}\cos \frac{B}{2}\cos \frac{C}{2}}$ гэвэл $t\leq \frac{1}{2}$ гэж батлахад хангалттай болно. Кошийн тэнцэтгэл биш ёсоор
+\begin{equation*}
+\cos^2 \frac{A}{2} + \cos^2 \frac{B}{2} + \cos^2 \frac{C}{2} \geq 3t^2
+\end{equation*}
+болж 22 дугаар бодлогын тэмдэглэлтэй адилаар батлагдана. (d) -г батлахад 24 дүгээр бодлогын (d)-г ашиглавал 
+\begin{equation*}
+\cos^2 A + \cos^2 B + \cos^2 C = 1- 2\cos A \cos B \cos C \geq \frac{3}{4}
+\end{equation*}
+болно. Тригонометрийн үндсэн адилтгалаар (d) болон (e) тэнцэтгэл бишүүд нь эквивалент юм.
+
+(e) тэнцэтгэл бишийн хувьд кошийн тэнцэтгэл бишээр
+\begin{equation*}
+\frac{9}{4} \geq \sin^2 A + \sin^2 B + \sin^2 C \geq 3\sqrt[3]{\sin^2 A \sin^2 B \sin^2 C}
+\end{equation*}
+\begin{equation*}
+\sin A\sin B \sin C \leq \frac{3\sqrt{3}}{8}
+\end{equation*}
+болж (b) батлагдана.
+
+$(a-b)^2 + (b-c)^2 + (c-a)^2 \geq 0 \Rightarrow 3(a^2+b^2 + c^2) \geq (a+b+c)^2$  болно. $a=\sin A, b=\sin B, c= \sin C$ гэвэл
+\begin{equation*}
+3(\sin^2 A + \sin^2 B + \sin^2 C) \geq (\sin A + \sin B + \sin C)^2
+\end{equation*}
+(e) -г орлуулвал
+\begin{equation*}
+\frac{27}{8} \geq (\sin A + \sin B + \sin C)^2 \Rightarrow \sin A + \sin B + \sin C \leq \frac{3\sqrt{3}}{2}
+\end{equation*}
+болж (c) батлагдлаа. (f) нь (e) болон $\cos 2x = 2\cos^2 x -1$ адилтгалыг ашиглан батлана. (g) тэнцэтгэл бишийг (b) тэнцэтгэл биш болон $\sin 2A + \sin 2B + \sin 2C = 4\sin A\sin B \sin C$ адилтгалыг ашиглан батална. Сүүлийн тэнцэтгэл үнэн болохыг 25 дугаар бодлогоор харуулсан билээ.
+
 
 \Problem
 $x \neq \frac{k\pi}{6}, (k \in \mathbb{Z})$ бол 
@@ -1118,7 +1201,323 @@ S = 2-c(\cos \theta + \sin \theta + \cos \phi + \sin \phi) + c^2 (\cos \theta\co
 болж батлагдав.
 
 \Problem
-Хэрэв $\sin \alpha \cos \beta = -\frac{1}{2}$ бол $\cos \alpha \sin \beta$-гийн боломжит бүх утгыг ол.
+Хэрэв $\sin \alpha \cos \beta = -\frac{1}{2}$ бол $\cos \alpha \sin \beta$-гийн утгын мужийг ол.
 
 \TheSolution
+\begin{equation*}
+\sin(\alpha + \beta) = \sin \alpha\cos \beta + \cos \alpha \sin \beta = -\frac{1}{2} + \cos \alpha \sin \beta
+\end{equation*}
+$-1 \leq \sin(\alpha + \beta) \leq 1$ байдаг тул $-\frac{1}{2}\leq \cos \alpha\sin \beta \leq \frac{3}{2}$ болно.
+Үүнтэй адилаар
+\begin{equation*}
+\sin (\alpha - \beta) = \sin\alpha\cos\beta - \cos\alpha\sin \beta
+\end{equation*}
+болохыг тооцвол $-\frac{3}{2} \leq \cos\alpha\sin\beta \leq \frac{1}{2}$ болно. Дээрх үр дүнгүүдийг нэгтгэвэл
+\begin{equation*}
+-\frac{1}{2} \leq \cos\alpha\sin \beta \leq \frac{1}{2}
+\end{equation*}
+болно. Гэвч $\cos\alpha\sin \beta$ -гийн бүх утга $\left[-\frac{1}{2}; \frac{1}{2}\right]$ завсарт оршино гэж харуулах шаардлагатай.
+\begin{align*}
+(\cos \alpha\sin\beta)^2 &= (1-\sin^2\alpha)(1-\cos^2\beta) = \\
+&= 1-(\sin^2\alpha + \cos^2\beta) + \sin^2 \alpha\cos^2\beta = \\
+&= \frac{5}{4} - (\sin^2\alpha + \cos^2\beta) = \\
+&= \frac{5}{4} - (\sin\alpha + \cos\beta)^2 + 2\sin\alpha\cos\beta = \\
+&= \frac{1}{4} - (\sin\alpha + \cos\beta)^2
+\end{align*}
+$x=\sin \alpha, y = \cos \beta$ гэвэл $-1\leq x, y \leq 1$ ба $xy=-\frac{1}{2}$ болно. $x$ ба $y$ нийлбэрийн утгын мужийг олъё. Хэрэв $s=x+y$ гэвэл $x, y$ нь
+\begin{equation*}
+u^2 - su - \frac{1}{2} = 0
+\end{equation*}
+квадрат тэгшитгэлийн язгуурууд болох ба $\left\lbrace x, y\right\rbrace = \left\lbrace\frac{s+\sqrt{s^2 + 2}}{2}, \frac{s-\sqrt{s^2 + 2}}{2}\right\rbrace$ болно. $\frac{s+\sqrt{s^2 + 2}}{2} \leq 1$ нөхцлөөс $s \leq \frac{1}{2}$ гэдэг нь илэрхий. Үүнтэй адил нөхцлийг шалгаснаар $s$- ийн утгын муж нь $\left[-\frac{1}{2}, \frac{1}{2}\right]$ болох тул $s^2 \in \left[0, \frac{1}{4}\right]$ болно. Иймд $(\cos \alpha\sin \beta)^2 \in \left[0, \frac{1}{4}\right] \Rightarrow \cos\alpha\sin\beta \in \left[ -\frac{1}{2}, \frac{1}{2}\right]$ болно.
+
+\Problem
+$a, b, c$ бодит тоонуудын хувьд
+\begin{equation*}
+(ab+bc+ca -1)^2 \leq (a^2 +1)(b^2 + 1)(c^2 + 1)
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+$a= \tg x, b = \tg y, c = \tg z$ ба $-\frac{\pi}{2}<x,y,z<\frac{\pi}{2}$ гэе. Тэгвэл $a^2 + 1 = \sec^2 x, b^2 + 1 = \sec^2 y, c^2 + 1 = \sec^2 z$ болно. Батлах тэнцэтгэл бишийн хоёр талыг $\cos^2 x\cos^2 y \cos^2 z$ -ээр үржүүлвэл
+\begin{equation*}
+\left[ (ab+bc+ca-1)\cos x\cos y \cos z\right]^2 \leq 1
+\end{equation*}
+болно.
+\begin{align*}
+(ab+bc)\cos x\cos y\cos z = \sin x\sin y\cos z + \sin y\sin z\cos x = \\
+ = \sin y\sin (x+z)
+\end{align*}
+\begin{align*}
+(ca - 1) \cos x \cos y\cos z = \sin z\sin x\cos y - \cos x \cos y \cos z = \\
+= -\cos y \cos(x+z)
+\end{align*}
+гэдгийг орлуулвал
+\begin{align*}
+[(ab+bc+ca - 1)\cos x\cos y\cos z]^2 = \\
+= [\sin y \sin(x+z) - \cos y \cos(x+z)]^2 = \\
+ = \cos^2(x+y+z) \leq 1
+\end{align*}
+болж батлагдлаа.
+
+
+\Problem
+\begin{equation*}
+(\sin x + a\cos x)(\sin x + b\cos x) \leq 1 + \left(\frac{a+b}{2}\right)^2
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Хэрвээ $\cos x = 0$ бол дээрх тэнцэтгэл биш $\sin^2 x \leq 1+ \left(\frac{a+b}{2}\right)^2$ болж биелэнэ. Иймд $\cos x \neq 0$ тохиолдлыг авч үзье. Тэнцэтгэл бишийн хоёр талыг $\cos^2 x$ -д хуваавал
+\begin{equation*}
+(\tg x + a)(\tg x + b) \leq \left[1+ \left(\frac{a+b}{2}\right)^2 \right]\sec^2 x
+\end{equation*}
+болно. $t = \tg x$ гэвэл $\sec^2 x = 1+t^2$ болох ба дээрх тэнцэтгэл бишд орлуулвал
+\begin{equation*}
+t^2 + (a+b)t + ab \leq \left(\frac{a+b}{2}\right)^2 t^2 + t^2 + \left(\frac{a+b}{2}\right)^2 + 1
+\end{equation*}
+\begin{equation*}
+\left(\frac{a+b}{2}\right)^2 t^2 + 1 - (a+b)t + \left(\frac{a+b}{2}\right)^2 - ab \geq 0
+\end{equation*}
+\begin{equation*}
+\left(\frac{(a+b)t}{2} - 1\right)^2 + \left(\frac{a-b}{2}\right)^2 \geq 0
+\end{equation*}
+болж батлагдана.
+
+\Problem
+\begin{equation*}
+|\sin a_1| + |\sin a_2| + \cdots + |\sin a_n| + |\cos (a_1 + a_2 + \cdots + a_n)| \geq 1
+\end{equation*}
+болохыг батал.
+
+\TheSolution
+Математик индукцийн аргыг ашиглан баталъя. $n = 1$ үед
+\begin{equation*}
+|\sin a_1| + |\cos a_1| \geq \sin^2 a_1 + \cos^2 a_1 = 1
+\end{equation*}
+учир тэнцэтгэл биш биелнэ.
+\begin{equation*}
+|\sin a_1| + |\sin a_2| + \cdots + |\sin a_{n+1}| + |\cos (a_1 + a_2 + \cdots + a_{n+1})| \geq 1
+\end{equation*}
+гэдгийг харуулахын тулд бид
+\begin{equation*}
+|\sin a_{n+1}| + |\cos (a_1 + a_2 + \cdots + a_{n+1})| \geq |\cos(a_1 + a_2 + \cdots + a_n)|
+\end{equation*}
+гэж баталъя.
+
+$s_k = a_1 + a_2 + \cdots + a_k$ гэвэл дээрх тэнцэтгэл биш $|\sin a_{n+1}| + |\cos s_{n+1}| \geq |\cos s_n|$ болно. Өнцгүүдийн ялгаварын косинусын томьёог ашиглавал
+\begin{align*}
+|\cos s_n| &= |\cos(s_{n+1} - a_{n+1})| = \\
+&= |\cos s_{n+1}\cos a_{n+1} + \sin s_{n+1}\sin a_{n+1}| = \\
+&= |\cos s_{n+1}\cos a_{n+1}| + |\sin s_{n+1}\sin a_{n+1}| \leq \\
+&\leq |\cos s_{n+1}| + |\sin a_{n+1}|
+\end{align*}
+болж батлагдлаа.
+
+\Problem
+[Russia 2003, by Nazar Agakhanov]
+\begin{align*}
+S &= \left\lbrace \sin \alpha, \sin 2\alpha, \sin 3\alpha \right\rbrace \\
+T &= \left\lbrace \cos \alpha, \cos 2\alpha, \cos 3\alpha \right\rbrace
+\end{align*}
+олонлогууд тэнцүү байх бүх боломжит $\alpha$ өнцгийг ол.
+
+\TheSolution
+$S, T$  олонлогууд тэнцүү олонлогууд учир элементүүдийн нийлбэр нь хоорондоо тэнцүү байна.
+\begin{equation*}
+\sin \alpha + \sin 2\alpha + \sin 3\alpha = \cos \alpha + \cos 2\alpha + \cos 3\alpha
+\end{equation*}
+тэнцүүгийн хоёр талын нийлбэр тус бүрийн нэг болон гуравдугаар нэмэгдэхүүнүүдэд синусуудын болон косинусуудын нийлбэрийн томьёог ашиглавал
+\begin{equation*}
+2\sin 2\alpha\cos \alpha + \sin 2\alpha = 2\cos 2\alpha \cos \alpha + \cos 2\alpha
+\end{equation*}
+\begin{equation*}
+\sin 2\alpha(2\cos \alpha + 1) = \cos 2\alpha (2\cos \alpha + 1)
+\end{equation*}
+болно. Хэрэв $2\cos \alpha + 1 = 0$ бол $\cos \alpha  =  -\frac{1}{2}$ болох ба $\alpha = \pm \frac{2}{3}\pi + 2\pi k, k\in \mathbb{Z}$ болно. Гэвч $S$ болон $T$ олонлогууд тэнцүү биш олонлогууд болох тул $2\cos \alpha + 1 \neq 0$ байна. Энэ үед $\sin 2\alpha = \cos 2\alpha \Rightarrow \tg 2\alpha = 1$ болно. Эндээс $\alpha = \frac{\pi}{8} + \frac{\pi k}{2}, k\in \mathbb{Z}$ болно.
+
+\Problem
+
+\Problem
+[Canada 1998] $ABC$ гурвалжны $\angle BAC=40^\circ$ ба $\angle ABC = 60^\circ$ болно. $D$, $E$ нь $AC, AB$ дээр  $\angle CBD=40^\circ$, $\angle BCE=70^\circ$ байхаар оршино. $BD$ ба $CE$ нь $F$ цэгт огтлолцох бол $AF\perp BC$ болохыг батал.
+
+\TheSolution
+Бодлогын нөхцлөөр $\angle ABD = 20^\circ, \angle BCA = 80^\circ, \angle ACE = 10^\circ$ болно. $A$ цэгээс $BC$ талруу татсан өндрийг $AG$ гэе. Тэгвэл $\angle BAG = 90^\circ - \angle BCA = 10^\circ$ болно. Иймд
+\begin{equation*}
+\frac{\sin \angle BAG \sin \angle ACE \sin \angle CBD}{\sin \angle CAG \sin \angle BCE \sin \angle ABD} = 
+\frac{\sin 30^\circ \sin 10^\circ \sin 40^\circ}{\sin 10^\circ \sin 70^\circ \sin 20^\circ}
+= \frac{\frac{1}{2}(\sin 10^\circ)(2\sin 20^\circ \cos 20^\circ)}{\sin 10^\circ \cos 20^\circ \sin 20^\circ} = 1
+\end{equation*}
+болно. Чевийн теоремийн тригонометр хэлбэрээр $AG=BD=CE$ болно. Иймээс $F \in AG$ бөгөөд $AF \perp BC$ болно.
+
+
+\Problem
+[IMO 1991] $S$ нь $\triangle ABC$ -ны дотор орших цэг бол $\angle SAB$, $\angle SBC$, $\angle SCA$ өнцгүүдийн ядаж нэг нь $30^\circ$ -аас ихгүй байна гэж харуул.
+
+\ASolution
+$\alpha =\angle PAB = \angle PBC = \angle PCA$ чанарыг хангах $P$ цэгийг \textbf{(Брокерийн цэг)} авч үзье. $S$ цэг $PAB$, $PBC$, $PCA$ гурвалжнуудын дотор орших тул $\triangle PAB$, $\triangle PBC$, $\triangle PCA$ өнцгүүдийн ядаж нэг нь $\alpha$ өнцгөөс ихгүй байна. Иймд бид $\alpha \leq 30^\circ$ буюу $\sin \alpha \leq \frac{1}{2} \Rightarrow \csc^2 \alpha \geq 4$ гэж харуулахад хангалттай. 28 дугаар бодлогоор бид
+\begin{equation*}
+\csc^2 \alpha = \csc^2 A + \csc^2 B + \csc^2 C
+\end{equation*}
+болохыг харуулсан. Cauchy-Schwarz - ийн тэнцэтгэл бишийг ашиглавал
+\begin{equation*}
+\frac{9}{4}\csc^2 \alpha \geq (\sin^2 A + \sin^2 B + \sin^2 C)(\csc^2 A + \csc^2 B + \csc^2 C)\geq 9
+\end{equation*}
+гэдгээс $\csc^2 \geq 4$ болж батлагдав.
+
+
+\ASolution
+$S$ цэгээс гурвалжны талууд хүртэлх зайг харгалзан $d_a, d_b, d_c$,  $x= \angle SAB, y=\angle SBC, z=\angle SCA$гэж тэмдэглэвэл
+\begin{equation*}
+d_c = SA\sin x = SB \sin (B-y)
+\end{equation*}
+\begin{equation*}
+d_a = SB\sin y = SC \sin (C-z)
+\end{equation*}
+\begin{equation*}
+d_b = SC\sin z = SA \sin (A-x)
+\end{equation*}
+болно. Эдгээрийг хооронд нь үржүүлвэл
+\begin{equation}\label{eq:equation1}
+\sin x\sin y\sin z = \sin (A-x)\sin(B-y)\sin(C-z)
+\end{equation}
+болно. Хэрвээ $x+y+z \leq \frac{\pi}{2}$ бол уг бодлого илэрхий. Иймд $x+y+z > \frac{\pi}{2}$ үед $(A-x) + (B-y) + (C-z) < \frac{\pi}{2}$) байна. $f(x) = \ln (\sin x) \vspace{0.5 cm} 0<x<\frac{\pi}{2}$ функцийн хувьд хоёрдугаар зэргийн уламжлал нь $f''(x) = -\csc^2 x$ учир хотгор функц юм. \textbf{Jensen's inequality}-аар
+\begin{equation*}
+\frac{1}{3}\left(\ln \sin (A-x) + \ln \sin (B-y) + \ln \sin(C-z)\right) \leq \ln \sin \frac{(A-x)+(B-y)+(C-z)}{3}
+\end{equation*}
+гэдгээс
+\begin{equation*}
+\ln(\sin(A-x)\sin(B-y)\sin(C-z))^\frac{1}{3} \leq \ln\sin \frac{6}{\pi} = \ln \frac{1}{2}
+\end{equation*}
+буюу
+\begin{equation*}
+\sin(A-x)\sin(B-y)\sin(C-z) \leq \frac{1}{8} \Rightarrow \sin x\sin y\sin z \leq \frac{1}{8}
+\end{equation*}
+болно. Иймд $\sin x, \sin y, \sin z$ -н ядаж нэг нь $\frac{1}{2}$-ээс бага байна.
+
+\ASolution
+Өмнөх бодолтын \textbf{Jensen's inequality}-г ашигласанаас хойш үргэлжлүүлбэл (\ref{eq:equation1}) тэнцэтгэлийг
+\begin{equation*}
+(\sin x \sin y\sin z)^2 = \sin x\sin (A-x)\sin y \sin(B-y)\sin z\sin(C-z)
+\end{equation*}
+хэлбэрээр бичиж болно. Синусуудын үржвэрийг нийлбэрт хувиргах болон давхар өнцгийн томъёогоор
+\begin{equation*}
+2\sin x \sin(A-x) = \cos (A-2x) - \cos A \leq 1 -\cos A = 2\sin^2 \frac{A}{2} \Rightarrow \sin x\sin(A-x) \leq \sin^2\frac{A}{2}
+\end{equation*}
+болно. Иймд 23 дугаар бодлогын (a) -аар 
+\begin{equation*}
+\sin x \sin y\sin z \leq \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2} \leq \frac{1}{8}
+\end{equation*}
+болж батлагдав.
+
+\Problem
+$a=\frac{\pi}{7}$ бол
+\begin{enumerate}[(a)]
+\item
+$\sin^2 3a - \sin^2 a = \sin 2a \sin 3a$ гэж харуул.
+\item
+$\csc a = \csc 2a + \csc 4a$  гэж харуул.
+\item
+$\cos a - \cos 2a + \cos 3a$ тооцоол
+\item
+$\cos a$ нь $8x^3 + 4x^2 -4x-1=0$ тэгшитгэлийн язгуур болохыг батал.
+\item
+$\cos a$-г иррационал гэж батал.
+\item
+$\tg a\tg 2a \tg 3a$ тооцоол.
+\item
+$\tg^2 a + \tg^2 2a + \tg^2 3a$ тооцоол.
+\item
+$\tg^2 a\tg^2 2a + \tg^2 2a\tg^2 3a + \tg^2 3a\tg^2 a$ тооцоол.
+\item
+$\ctg^2 a + \ctg^2 2a + \ctg^2 3a$ тооцоол.
+
+\end{enumerate}
+
+\TheSolution
+\begin{enumerate}[(a)]
+\item
+Синусуудын нийлбэр, ялгаварыг үржвэр хэлбэрт оруулан $a=\frac{\pi}{7}$ тохиолдолд $\sin 4a = \sin 3a$ болохыг ашиглавал
+\begin{align*}
+\sin^2 3a - \sin^2a = (\sin 3a + \sin a)(\sin 3a - \sin a) = \\
+= (2\sin 2a\cos a)(2\sin a\cos 2a) = (2\sin 2a\cos 2a)(2\sin a \cos a) = \\
+= \sin 4a \sin 2a = \sin 2a \sin 3a
+\end{align*}
+болж батлагдав.
+
+\item
+\begin{equation*}
+\frac{1}{\sin a} = \frac{1}{\sin 2a} + \frac{1}{\sin 4a}
+\end{equation*}
+\begin{equation*}
+\frac{1}{\sin a} = \frac{\sin 2a + \sin 4a}{\sin 2a\sin 4a}
+\end{equation*}
+\begin{equation*}
+\sin 2a\sin 4a = \sin a(\sin 2a + \sin 4a)
+\end{equation*}
+синусуудын нийлбэрийг үржвэр хэлбэрт оруулвал
+\begin{equation*}
+2\sin a \cos a \sin 4a = \sin a (2\sin 3a\cos a)
+\end{equation*}
+$\sin 4a = \sin 3a$ тул
+\begin{equation*}
+2\sin a \cos a \sin 4a = 2\sin a \cos a \sin 4a
+\end{equation*}
+батлагдлаа.
+
+\item
+Хариу нь $\frac{1}{2}$. Иймд $\cos 2a + \cos 4a + \cos 6a = -\frac{1}{2}$ гэж батлахад хангалттай.
+Энэ нь
+\begin{equation*}
+t = \cos 2x + \cos 4x + \cdots + \cos 2nx = -\frac{1}{2}, \vspace{1cm} x=\frac{\pi}{2n+1}
+\end{equation*}
+тэнцэтгэлийн $n=3$ үеийн тухайн тохиолдол юм. $2\sin x\cos kx = \sin (k+1)x - \sin (k-1)x$ болохыг ашиглавал
+\begin{align*}
+2t\sin x = 2\sin x (\cos 2x + \cos 4x + \cdots + \cos 2nx) = \\
+= [\sin 3x - \sin x]+ [\sin 5x - \sin 3x] + \cdots + [\sin (2n+1) - \sin (2n-1)] =\\
+= \sin (2n + 1)x - \sin x = -\sin x
+\end{align*}
+болж батлагдлаа.
+
+\item
+$3a + 4a = \pi \Rightarrow \sin 3a = \sin 4a$  болно. 
+\begin{align*}
+\sin a(3-4\sin^2 a) = 2\sin 2a \cos 2a = 4\sin a \cos a \cos 2a\\
+3 - 4(1-\cos^2 a) = 4\cos a (2\cos^2 a - 1)
+\end{align*}
+Иимээс
+\begin{equation}
+8\cos^3 a - 4\cos^2 a - 4\cos a + 1 = 0
+\end{equation}
+болно. $u=2\cos a$ -г куб тэгшитгэлийн язгуур гэвэл
+\begin{equation*}
+u^3-u^2-2u + 1=0
+\end{equation*}
+болно. Гауссын леммээр дээрх куб тэгшитгэлийн $-1, 1$ гэсэн рационал шийдүүдтэй байх боломжтой. Гэвч эдгээр нь язгуур биш учир энэ тэгшитгэлд рационал язгуур байхгүй. Иймд $\cos a$ иррационал тоо учир (e) батлагдлаа.
+
+\stepcounter{enumi}
+
+\item
+$3a + 4a = 0 \Rightarrow \tg 3a + \tg 4a = 0$ болно. Өнцгүүдийн нийлбэрийн тангенсийн томъёогоор
+\begin{equation*}
+\frac{\tg a + \tg 2a}{1-\tg a\tg 2a} + \frac{2\tg 2a}{1-\tg^2 2a} = 0
+\end{equation*}
+\begin{equation*}
+\tg a + 3\tg 2a -3\tg a\tg^2 2a - \tg^3 2a = 0
+\end{equation*}
+$\tg a = x$ гэвэл $\tg 2a = \frac{2\tg a}{1-\tg^2 a} = \frac{2x}{1-x^2}$ болох ба
+\begin{equation*}
+x + \frac{6x}{1-x^2} - \frac{12 x^3}{(1-x^2)^2} - \frac{8x^3}{(1-x^2)^3} = 0
+\end{equation*}
+\begin{equation*}
+(1-x^2)^3 + 6(1-x^2)^2 - 12x^2(1-x^2) - 8x^2 = 0
+\end{equation*}
+\begin{equation*}
+x^6 - 21x^4 + 35x^2 - 7 = 0
+\end{equation*}
+болно.
+
+\end{enumerate}
+
+
+
 \end{document}

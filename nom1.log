@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.18)  5 FEB 2016 00:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.18)  19 FEB 2016 05:56
 entering extended mode
 **./nom1.tex
 (nom1.tex
@@ -612,71 +612,110 @@ Overfull \hbox (67.88803pt too wide) in paragraph at lines 123--123
  []
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
 Overfull \hbox (85.87712pt too wide) in paragraph at lines 141--141
 [] 
  []
 
-[3]
-Overfull \hbox (62.88817pt too wide) in paragraph at lines 250--250
+[3] [4]
+Overfull \hbox (62.88817pt too wide) in paragraph at lines 253--253
 [] 
  []
 
-[4] [5] [6]
-Overfull \hbox (4.64178pt too wide) in paragraph at lines 395--397
+
+Overfull \hbox (2.10188pt too wide) in paragraph at lines 258--260
+[]\T2A/cmr/bx/it/10 Тэмдэглэл: \T2A/cmr/m/n/10 Той-рог біх-лээ-рээ тэгш °н-ц°г-
+т°д агуу-лаг-даж бай-хын тулд тойр-
+ []
+
+[5] [6] [7]
+Overfull \hbox (4.64178pt too wide) in paragraph at lines 425--427
 []\T2A/cmr/bx/n/10 18. $\OMS/cmsy/m/n/10 4\OML/cmm/m/it/10 ABC$ \T2A/cmr/m/n/10
  - ны хувьд $[] \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 B \OT1
 /cmr/m/n/10 + [] \OML/cmm/m/it/10 C \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1$ \T2A/
 cmr/m/n/10 бол $\OML/cmm/m/it/10 min [] <$
  []
 
-[7]
-Overfull \hbox (62.14334pt too wide) in paragraph at lines 468--468
+[8]
+Overfull \hbox (62.14334pt too wide) in paragraph at lines 498--498
 [] 
  []
 
-[8] [9] [10]
-Overfull \hbox (0.89471pt too wide) in paragraph at lines 602--604
+[9] [10] [11]
+Overfull \hbox (0.89471pt too wide) in paragraph at lines 632--634
 \T2A/cmr/bx/it/10 Тэмдэглэл: \T2A/cmr/m/n/10 (a) -г °°р ар-гаар ба-талъя. Бод-л
 о-гын н°хц-л°°р $[] []\OML/cmm/m/it/10 ; [] []; [] []$
  []
 
-[11] [12] [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 864--865
+[12] [13] [14] [15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--882
+Underfull \hbox (badness 10000) in paragraph at lines 964--965
 
  []
 
 
-Overfull \hbox (1.4439pt too wide) in paragraph at lines 885--885
+Overfull \hbox (1.4439pt too wide) in paragraph at lines 968--968
 [] 
  []
 
-[16] [17]
-Overfull \hbox (106.63446pt too wide) in paragraph at lines 1001--1001
+[18] [19] [20]
+Overfull \hbox (106.63446pt too wide) in paragraph at lines 1084--1084
 [] 
  []
 
-[18]
-Overfull \hbox (29.464pt too wide) in paragraph at lines 1022--1024
+
+Overfull \hbox (29.464pt too wide) in paragraph at lines 1105--1107
 []\T2A/cmr/bx/it/10 Бодолт: \T2A/cmr/m/n/10 Бид-ний олох илэр-хийл-лийн ут-гыг 
 $\OML/cmm/m/it/10 P$ \T2A/cmr/m/n/10 гээд $\OML/cmm/m/it/10 Q \OT1/cmr/m/n/10 =
  [] \OML/cmm/m/it/10 a [] \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 a [] \OT1/cmr/m/n/1
 0 3\OML/cmm/m/it/10 a [] [] \OT1/cmr/m/n/10 999\OML/cmm/m/it/10 a$
  []
 
-[19] [20] [21] (nom1.aux) ) 
+[21] [22] [23] [24] [25]
+Overfull \hbox (51.27872pt too wide) detected at line 1349
+[] \OT1/cmr/m/n/10 = [] = [] = 1
+ []
+
+[26]
+Overfull \hbox (0.1338pt too wide) in paragraph at lines 1368--1370
+$\OML/cmm/m/it/10 S$ \T2A/cmr/m/n/10 цэ-гээс гур-валж-ны та-лууд хір-тэлх зайг 
+хар-гал-зан $\OML/cmm/m/it/10 d[]; d[]; d[]$\T2A/cmr/m/n/10 , $\OML/cmm/m/it/10
+ x \OT1/cmr/m/n/10 = \U/msa/m/n/10 \\OML/cmm/m/it/10 SAB; y \OT1/cmr/m/n/10 =$
+ []
+
+
+Overfull \hbox (26.27657pt too wide) detected at line 1386
+[] [] \OMS/cmsy/m/n/10  [] [] []
+ []
+
+
+Overfull \hbox (31.45927pt too wide) detected at line 1405
+\OT1/cmr/m/n/10 2 [] \OML/cmm/m/it/10 x []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \
+OMS/cmsy/m/n/10   \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 A \
+OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cms
+y/m/n/10   [] \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1 \OMS/cmsy
+/m/n/10   [] \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = 2 [][] [] \OMS/cmsy/m/n/10 ) 
+[] \OML/cmm/m/it/10 x []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10   
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  [][] []
+ []
+
+[27] [28] [29] (nom1.aux) ) 
 Here is how much of TeX's memory you used:
- 2481 strings out of 493634
- 26910 string characters out of 3141320
+ 2482 strings out of 493634
+ 26924 string characters out of 3141320
  96434 words of memory out of 3000000
- 5845 multiletter control sequences out of 15000+200000
+ 5846 multiletter control sequences out of 15000+200000
  20235 words of font info for 53 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 34i,17n,26p,700b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,17n,26p,1100b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
 our\lh\lh-t2a\dpi600\lasl1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\fonts\
 pk\ljfour\lh\lh-t2a\dpi600\labi1000.pk> <C:\Users\nmd\AppData\Local\MiKTeX\2.9\
@@ -696,9 +735,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nom1.pdf (22 pages, 237427 bytes).
+Output written on nom1.pdf (30 pages, 281956 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
+ 379 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
